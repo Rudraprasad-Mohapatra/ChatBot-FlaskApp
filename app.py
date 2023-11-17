@@ -1,7 +1,12 @@
-from flask import Flask, request, jsonify
-from app.chatbot.chatbot_bourntec import get_response,out
+from flask import Flask, render_template, request, jsonify
+from app.chatbot.chatbot_bourntec import out
 
 app = Flask(__name__)
+
+@app.route('/ping', methods=['GET'])
+def ping():
+    # out("message")
+    return jsonify({'response': "pong"})
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -15,10 +20,9 @@ def chat():
 
     return jsonify({'response': response})
 
-@app.route('/ping', methods=['GET'])
-def ping():
-    # out("message")
-    return jsonify({'response': "pong"})
+@app.route('/')
+def index():
+    return render_template('chat_ui.html')
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5005, debug=True)
