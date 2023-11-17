@@ -1,0 +1,81 @@
+<!-- chat_ui.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI</title>
+    <style>
+        #chat-container {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-messages {
+            overflow-y: auto;
+            max-height: 300px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        #user-input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="chat-container">
+        <div id="chat-messages"></div>
+        <input type="text" id="user-input" placeholder="Type your message...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const chatMessagesContainer = document.getElementById('chat-messages');
+        const userInput = document.getElementById('user-input');
+
+        function displayMessage(sender, message) {
+            const messageDiv = document.createElement('div');
+            messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            chatMessagesContainer.appendChild(messageDiv);
+            chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
+        }
+
+        function sendMessage() {
+            const userMessage = userInput.value.trim();
+            if (userMessage === '') {
+                return;
+            }
+
+            // Display user message in the chat UI
+            displayMessage('You', userMessage);
+
+            // Send user message to the server using Axios
+            axios.post('/chat', { query: userMessage })
+                .then(response => {
+                    const chatbotResponse = response.data.response;
+                    // Display chatbot's response in the chat UI
+                    displayMessage('Chatbot', chatbotResponse);
+                })
+                .catch(error => {
+                    console.error('Error sending message:', error);
+                });
+
+            // Clear the user input field
+            userInput.value = '';
+        }
+    </script>
+
+</body>
+
+</html>
