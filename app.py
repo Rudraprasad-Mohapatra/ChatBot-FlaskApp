@@ -12,8 +12,6 @@ def ping():
 def chat():
     data = request.get_json()
     query = data.get('query')
-    # print("--------------------------------------------------------------------------------",data)
-    # print("--------------------------------------------------------------------------------",query)
     # Use your chatbot logic from the chatbot_logic module
 
     response = out(query)
@@ -26,4 +24,3 @@ def index():
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5005, debug=True)
-
