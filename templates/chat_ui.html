@@ -59,6 +59,26 @@
             border: none;
             color: rgb(116, 10, 214)
         }
+
+        /* Define the scrollbar styles */
+        ::-webkit-scrollbar {
+            width: 12px;
+            /* width of the scrollbar */
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #483da3;
+            /* color of the thumb */
+            border-radius: 6px;
+            /* roundness of the thumb */
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: rgb(255, 255, 255);
+            /* color of the track */
+            border-radius: 6px;
+            /* roundness of the track */
+        }
     </style>
 </head>
 
@@ -91,7 +111,7 @@
 
             function replaceLinks(message) {
                 let urlRegex = /(https?:\/\/[^\s]+)/g;
-                let replaceString = message.replace(urlRegex, function(url) {
+                let replaceString = message.replace(urlRegex, function (url) {
                     return '<a href="' + url + '" target="_blank">' + url + '</a>'
                 });
                 return replaceString;
