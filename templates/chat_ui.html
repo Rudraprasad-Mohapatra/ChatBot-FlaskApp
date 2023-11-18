@@ -90,8 +90,13 @@
             // Manipulating the message sent by the bot(only) so that the links coming in response can be clickable
 
             function replaceLinks(message) {
-                
+                let urlRegex = /(https?:\/\/[^\s]+)/g;
+                let replaceString = message.replace(urlRegex, function(url) {
+                    return '<a href="' + url + '" target="_blank">' + url + '</a>'
+                });
+                return replaceString;
             }
+
             if (sender === "Kass") {
                 let resultString = replaceLinks(message);
                 message = resultString;
