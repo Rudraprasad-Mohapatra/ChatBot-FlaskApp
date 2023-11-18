@@ -37,10 +37,14 @@
         }
 
         #chat-messages {
+            border:3px solid #483da3;
+            background-color: rgb(37, 37, 137);
             overflow-y: auto;
             max-height: 450px;
             margin-bottom: 10px;
             border-bottom: 1px solid #eee;
+            border-radius: 10px;
+            padding: 5px;
         }
 
         #user-input {
@@ -58,6 +62,12 @@
             margin-left: 10px;
             border: none;
             color: rgb(116, 10, 214)
+        }
+
+        .date-separator {
+            text-align: center;
+            margin: 10px 0;
+            color: #777;
         }
 
         /* Define the scrollbar styles */
@@ -85,6 +95,17 @@
 <body>
 
     <div id="chat-container">
+        <div class="giphy" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
+            <img 
+            src="../static/GIF/giphy.gif" 
+            alt="ChatBot Giphy" 
+            style="height: 50px;
+            width: 50px;
+            border: 2px solid blueviolet;
+            border-radius: 50%;">
+            &nbsp;
+            <p>Hii there👋 ! kass 24x7 here! </p>
+        </div>
         <div id="chat-messages"></div>
         <div class="input-container">
             <input type="text" id="user-input" placeholder="Type your message...">
@@ -94,6 +115,7 @@
     </div>
 
     <script src="../static/JS-Library/axios.min.js"></script>
+
     <script>
 
         const chatMessagesContainer = document.getElementById('chat-messages');
@@ -105,7 +127,7 @@
 
         // Message container's CSS added dynamically
 
-        function displayMessage(sender, message) {
+        function displayMessage(sender, message, date) {
 
             // Manipulating the message sent by the bot(only) so that the links coming in response can be clickable
 
@@ -164,8 +186,19 @@
         }, 1000);
 
 
-        // function called by the send button
+        // Storing chats in local storage of browser
+        function saveChatToLocalStorage(sender, message, date) {
+            // Retrieve existing chat history from localStorage
+            const existingChatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
 
+            // Add the new message to the chat history with timestamp
+            existingChatHistory.push({ sender, message, date });
+
+            // save the updated chat history with timestamp
+            localStorage.setItem('chatHistory', JSON.stringify(existingChatHistory));
+        }
+
+        // function called by the send button
         function sendMessage() {
 
             const userMessage = userInput.value.trim();
@@ -174,9 +207,14 @@
                 return;
             }
 
-            // Display user message in the chat UI
+            // Get the current date in the format YYYY-MM-DD
+            const currentDate = new Date().toISOString().split('T')[0];
 
-            displayMessage('You', userMessage);
+            // Display user message in the chat UI
+            displayMessage('You', userMessage, currentDate);
+
+            // Save the chat history to localStorage
+            saveChatToLocalStorage('You', userMessage, currentDate);
 
             // Making the submit button disabled clicking enter
             document.getElementById('submitButton').disabled = true;
@@ -188,8 +226,10 @@
                     const chatbotResponse = response.data.response;
 
                     // Display chatbot's response in the chat UI
-
                     displayMessage('Kass', chatbotResponse);
+
+                    // Save the chat history to localStorage
+                    saveChatToLocalStorage('Chatbot', chatbotResponse, currentDate);
 
                     // Making the submit button enabled after getting the response
 
@@ -219,6 +259,54 @@
 
 
 
+    </script>
+
+    <script>
+        window.addEventListener("load", function () {
+            // Retrieve chat history from localStorage
+            const chatHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
+
+            // Group messages by date
+            const groupedChatHistory = groupMessagesByDate(chatHistory);
+
+            // Display grouped chat history in the chat UI
+            groupedChatHistory.forEach(group => {
+                group.messages.forEach(({ sender, message }) => {
+                    displayMessage(sender, message, group.date);
+                });
+
+                // Display the date at the end of each group
+                displayDateSeparator(group.date);
+            })
+        });
+
+        function groupMessagesByDate(chatHistory) {
+            // Group messages by date using a Map
+            const groupedMessages = new Map();
+            chatHistory.forEach(({ sender, message, date }) => {
+                const group = groupedMessages.get(date) || { date, messages: [] };
+                group.messages.push({ sender, message });
+                groupedMessages.set(date, group);
+            });
+
+            // Convert the Map to an array of groups
+            return Array.from(groupedMessages.values());
+        }
+
+        function displayDateSeparator(date) {
+            // Display the date separator in the chat UI
+            const separatorDiv = document.createElement('div');
+            separatorDiv.classList.add('date-separator');
+            separatorDiv.textContent = formatDate(date);
+            chatMessagesContainer.appendChild(separatorDiv);
+        }
+
+        function formatDate(dateString) {
+            // Format the date string (e.g., "2023-11-17") to a readable format
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            const date = new Date(dateString);
+            return date.toLocaleDateString('en-IN', options);
+        }
     </script>
 
 </body>
