@@ -37,7 +37,7 @@
         }
 
         #chat-messages {
-            border:3px solid #483da3;
+            border: 3px solid #483da3;
             background-color: rgb(37, 37, 137);
             overflow-y: auto;
             max-height: 450px;
@@ -62,6 +62,30 @@
             margin-left: 10px;
             border: none;
             color: rgb(116, 10, 214)
+        }
+
+        /* Apply styles to anchor tags in the chat */
+        .chat a {
+            color: #3498db;
+            /* Use a color that fits your design */
+            text-decoration: none;
+            /* Remove default underline */
+            transition: color 0.3s ease;
+            /* Smooth color transition on hover */
+        }
+
+        .chat a:hover {
+            color: #c8e3f5;
+            /* Change color on hover */
+            text-decoration: underline;
+            /* Add underline on hover */
+        }
+
+        /* Optional: Add padding and margin for better spacing */
+        .chat a {
+            padding: 2px 4px;
+            margin-right: 5px;
+            display: inline-block;
         }
 
         .date-separator {
@@ -96,10 +120,7 @@
 
     <div id="chat-container">
         <div class="giphy" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-            <img 
-            src="../static/GIF/giphy.gif" 
-            alt="ChatBot Giphy" 
-            style="height: 50px;
+            <img src="../static/GIF/giphy.gif" alt="ChatBot Giphy" style="height: 50px;
             width: 50px;
             border: 2px solid blueviolet;
             border-radius: 50%;">
@@ -139,12 +160,13 @@
                 return replaceString;
             }
 
-            if (sender === "Kass") {
+            if (sender === "Kass" || sender === "Chatbot") {
                 let resultString = replaceLinks(message);
                 message = resultString;
             }
 
             const messageDiv = document.createElement('div');
+            messageDiv.classList.add("chat");
             messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
 
             Object.assign(messageDiv.style, {
@@ -272,13 +294,26 @@
             // Display grouped chat history in the chat UI
             groupedChatHistory.forEach(group => {
                 group.messages.forEach(({ sender, message }) => {
+                    console.log(sender);
                     displayMessage(sender, message, group.date);
                 });
 
                 // Display the date at the end of each group
-                displayDateSeparator(group.date);
+                const currentDate = new Date().toISOString().split('T')[0];
+
+                if (!(group.date === currentDate)) {
+                    displayDateSeparator(group.date);
+                    if (getNextDay(group.date) === currentDate) {
+                        // Display the "today" separator in the chat UI
+                        const todayDiv = document.createElement('div');
+                        todayDiv.classList.add('date-separator');
+                        todayDiv.textContent = "today";
+                        chatMessagesContainer.appendChild(todayDiv);
+                    }
+                }
             })
         });
+
 
         function groupMessagesByDate(chatHistory) {
             // Group messages by date using a Map
@@ -307,6 +342,19 @@
             const date = new Date(dateString);
             return date.toLocaleDateString('en-IN', options);
         }
+
+        function getNextDay(currentDate) {
+            // Parse the current date string to a Date object
+            const dateObject = new Date(currentDate);
+
+            // Add 1 to the current day
+            dateObject.setDate(dateObject.getDate() + 1);
+
+            // Format the result as a string in the format 'YYYY-MM-DD'
+            const nextDay = dateObject.toISOString().split('T')[0];
+
+            return nextDay;
+        }   
     </script>
 
 </body>
