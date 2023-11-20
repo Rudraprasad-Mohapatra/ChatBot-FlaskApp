@@ -71,7 +71,7 @@ def get_response(intents_list, intents_json):
         print("File name: ", filename)
         print("Line number: ", line_number)  # return line 5
         print("Error: ", e)
-        return "Soory, I am unable to understand! Please provide more details."
+        return "Sorry, I am unable to understand! Please provide more details."
 
 
 print("Hi I'm KASS ")
