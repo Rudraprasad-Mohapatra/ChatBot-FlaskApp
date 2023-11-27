@@ -291,26 +291,26 @@
             // Group messages by date
             const groupedChatHistory = groupMessagesByDate(chatHistory);
 
+            const currentDate = new Date().toISOString().split('T')[0];
+
             // Display grouped chat history in the chat UI
             groupedChatHistory.forEach(group => {
-                group.messages.forEach(({ sender, message }) => {
+                group.messages.forEach(({ sender, message }, ind) => {
                     console.log(sender);
+                    
+                    //Logic for displaying Date and today 
+                    if (ind == 0) {
+                        displayDateSeparator(group.date);
+                        if (group.date === currentDate) {
+                            const todayDiv = document.createElement('div');
+                            todayDiv.classList.add('date-separator');
+                            todayDiv.textContent = "today";
+                            chatMessagesContainer.appendChild(todayDiv);
+                        }
+                    }
+                    // 
                     displayMessage(sender, message, group.date);
                 });
-
-                // Display the date at the end of each group
-                const currentDate = new Date().toISOString().split('T')[0];
-
-                if (!(group.date === currentDate)) {
-                    displayDateSeparator(group.date);
-                    if (getNextDay(group.date) === currentDate) {
-                        // Display the "today" separator in the chat UI
-                        const todayDiv = document.createElement('div');
-                        todayDiv.classList.add('date-separator');
-                        todayDiv.textContent = "today";
-                        chatMessagesContainer.appendChild(todayDiv);
-                    }
-                }
             })
         });
 
