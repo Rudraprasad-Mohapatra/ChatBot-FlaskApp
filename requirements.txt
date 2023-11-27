@@ -1,6 +1,5 @@
 numpy
-Pandas
-random
+pandas
 tensorflow
 keras
 nltk
