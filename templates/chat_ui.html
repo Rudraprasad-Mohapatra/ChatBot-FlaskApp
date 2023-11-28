@@ -308,6 +308,14 @@
                             chatMessagesContainer.appendChild(todayDiv);
                         }
                     }
+                    if(ind == groupedChatHistory.length-1){
+                        if (group.date+1 === currentDate) {
+                            const todayDiv = document.createElement('div');
+                            todayDiv.classList.add('date-separator');
+                            todayDiv.textContent = "today";
+                            chatMessagesContainer.appendChild(todayDiv);
+                        }
+                    }
                     // 
                     displayMessage(sender, message, group.date);
                 });
