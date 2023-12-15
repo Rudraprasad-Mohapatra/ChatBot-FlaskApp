@@ -3,6 +3,7 @@ from pymongo import MongoClient
 from pymongo.errors import ServerSelectionTimeoutError
 import datetime
 from app.chatbot.chatbot_bourntec import out
+from app.chatbot_ml_model_bourntec.main import chat_with_ml
 
 app = Flask(__name__)
 
@@ -46,7 +47,8 @@ def chat():
 
     # Use your chatbot logic from the chatbot_logic module
 
-    response = out(query)
+    # response = out(query)
+    response = chat_with_ml(query)
 
     return jsonify({"response": response})
 

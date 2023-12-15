@@ -1,0 +1,1371 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hiii",
+                "Hii",
+                "Hi",
+                "Hai",
+                "Hey",
+                "How are you?",
+                "Is anyone there?",
+                "Hello",
+                "Good day",
+                "What's up",
+                "how are ya",
+                "heyy",
+                "whatsup"
+            ],
+            "responses": [
+                "Hello!",
+                "Good to see you again!",
+                "Hi there, how can I help?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "cya",
+                "see you",
+                "bye bye",
+                "See you later",
+                "Goodbye",
+                "I am Leaving",
+                "Bye",
+                "Have a Good day",
+                "talk to you later",
+                "ttyl",
+                "i got to go",
+                "gtg"
+            ],
+            "responses": [
+                "Sad to see you go :(",
+                "Talk to you later",
+                "Goodbye!",
+                "Come back soon",
+                "Goodbye! If you have any more questions in the future, feel free to ask. Have a great day!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "creator",
+            "patterns": [
+                "what is the name of your developers",
+                "what is the name of your creators",
+                "what is the name of the developers",
+                "what is the name of the creators",
+                "who created you",
+                "your developers",
+                "your creators",
+                "who are your developers",
+                "developers",
+                "you are made by",
+                "you are made by whom",
+                "who created you",
+                "who create you",
+                "creators",
+                "who made you",
+                "who designed you"
+            ],
+            "responses": [
+                "I am an AI assistant representing BOURNTEC"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "name",
+            "patterns": [
+                "name",
+                "your name",
+                "do you have a name",
+                "what are you called",
+                "what is your name",
+                "what should I call you",
+                "whats your name?",
+                "what are you",
+                "who are you",
+                "who is this",
+                "what am i chatting to",
+                "who am i taking to",
+                "what are you"
+            ],
+            "responses": [
+                "You can call me KASS",
+                "I'm KASS",
+                "I am a Chatbot named KASS.",
+                "I am your helper KASS"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "hours",
+            "patterns": [
+                "timing of opening",
+                "what is company timing",
+                "working days",
+                "when are you guys open",
+                "what are your hours",
+                "hours of operation",
+                "when is the organization open",
+                "company timing",
+                "what about company timing",
+                "is company open on saturday",
+                "tell something about company timing",
+                "what is the company hours",
+                "when should i come to company",
+                "when should i attend company",
+                "what is my company time",
+                "company timing",
+                "timing company"
+            ],
+            "responses": [
+                "The working hour of the company lies between morning 9.00am-6.30pm in the evening during the weekdays from Monday-Friday!"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "number",
+            "patterns": [
+                "more info",
+                "contact info",
+                "how to contact company",
+                "company telephone number",
+                "company number",
+                "What is your contact no",
+                "Contact number?",
+                "how to call you",
+                "company phone no?",
+                "how can i contact you",
+                "Can i get your phone number",
+                "how can i call you",
+                "phone number",
+                "phone no",
+                "call",
+                "Bourntec contact info",
+                "Bourntec Number",
+                "what is the contack number of Bourntec"
+            ],
+            "responses": [
+                "You can contact at: \nNorth_America:-(224)-232-5090\nMiddle East:- +9714 454 9794\nHyderabad:+91 40 48524852\nKerala:- +91 9207624398\nOdisha:-"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "services",
+            "patterns": [
+                "list of services",
+                "list of services offered",
+                "list of services offered in",
+                "what are the services offered in your company?",
+                "services?",
+                "services offered",
+                "services offered in your Bourntec",
+                "services you offer",
+                "branches?",
+                "services available at Bourntec?",
+                "branches available at your company?",
+                "what are the services in company?",
+                "what are branches in company?",
+                "what are services in company?",
+                "branches available in company?",
+                "can you tell me the services available in company?",
+                "can you tell me the branches available in company?",
+                "cloud",
+                "computer",
+                "Computer engineering?",
+                "it",
+                "IT",
+                "Information Technology",
+                "AI/Ml",
+                "AWS",
+                "Microsoft",
+                "Gcp",
+                "Oracle",
+                "analysis",
+                "analytics",
+                "govt",
+                "got.it.services"
+            ],
+            "responses": [
+                "Our oraganization offers AWS services,Cloud computing,GCP,AI,Oracle,Analysis,Govt.it.Services,Data Science."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "infrastructure",
+            "patterns": [
+                "how is company infrastructure",
+                "infrastructure",
+                "company infrastructure"
+            ],
+            "responses": [
+                "Our company has Excellent Infrastructureand "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "canteen",
+            "patterns": [
+                "food facilities",
+                "canteen facilities",
+                "canteen facility",
+                "is there any canteen",
+                "Is there a cafetaria in company",
+                "Does company have canteen",
+                "Where is canteen",
+                "where is cafetaria",
+                "canteen",
+                "Food",
+                "Cafetaria"
+            ],
+            "responses": [
+                "Our company has canteen with variety of food available"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "random",
+            "patterns": [
+                "I love you",
+                "Will you marry me",
+                "Do you love me",
+                "You look good",
+                "you look beautiful"
+            ],
+            "responses": [
+                "Thanks"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "swear",
+            "patterns": [
+                "fuck",
+                "bitch",
+                "shut up",
+                "hell",
+                "stupid",
+                "idiot",
+                "dumb ass",
+                "asshole",
+                "fucker"
+            ],
+            "responses": [
+                "please use appropriate language",
+                "Maintaining decency would be appreciated"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "vacation",
+            "patterns": [
+                "holidays",
+                "when will semester starts",
+                "when will semester end",
+                "when is the holidays",
+                "list of holidays",
+                "Holiday in these year",
+                "holiday list",
+                "about vacations",
+                "about holidays",
+                "When is vacation",
+                "When is holidays",
+                "how long will be the vacation"
+            ],
+            "responses": [
+                "For vacation related information please contact the individual"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "salutaion",
+            "patterns": [
+                "okk",
+                "okie",
+                "nice work",
+                "well done",
+                "good job",
+                "thanks for the help",
+                "Thank You",
+                "its ok",
+                "Thanks",
+                "Good work",
+                "k",
+                "ok",
+                "okay"
+            ],
+            "responses": [
+                "I am glad I helped you",
+                "welcome, anything else i can assist you with?"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "task",
+            "patterns": [
+                "what can you do",
+                "what are the thing you can do",
+                "things you can do",
+                "what can u do for me",
+                "how u can help me",
+                "why i should use you"
+            ],
+            "responses": [
+                "I can answer to low-intermediate questions regarding Bourntec",
+                "You can ask me questions regarding Bourntec, and i will try to answer them"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "gender",
+            "patterns": [
+                "gender",
+                "what is your gender",
+                "are you male or female",
+                "are you a trans",
+                "are you a transgender"
+            ],
+            "responses": [
+                "I am an AI assistant so I don't have a gender"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "experience",
+            "patterns": [
+                "what experience does the company had",
+                "what is experience in bourntec",
+                "what is bourntec solution providing",
+                "how bourntec gives experience",
+                "which service i can get from bourntec",
+                "what is experience in bourntec",
+                "experience",
+                "bourntec experience",
+                "experience of bourntec",
+                "experience of company",
+                "more about your organisation ",
+                "about your organisation",
+                "experience of your organisation",
+                "how can I contact bourntec for service experience ",
+                "How many experience bourntec has",
+                "Could you tell me about your organization's past experiences",
+                "What is your organization's track record in terms of experiences",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples",
+                "How has your organization's previous experiences shaped its current operations",
+                "What lessons has your organization learned from its experiences",
+                "What insights have your organization gained from its past experiences",
+                "Can you describe some of the challenges faced by your organization due to its experiences",
+                "what technology service bourntec has",
+                "how bourntec provides solutions",
+                "what are the benefits of using bourntec",
+                "how bourntec helps businesses like mine",
+                "how bourntec supports small and medium sized companies",
+                "how bourntec assists startups"
+            ],
+            "responses": [
+                "Bourntec provides experience on information technology,insurance,food & restaurants,technology,goverment,education,healthcare,motor logistics,airports"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "information technology ",
+            "patterns": [
+                "what experience does the company provide in information technology",
+                "how much experience bourntec has in information technology ",
+                "what is bourntec solution providing",
+                "how bourntec gives experience",
+                "which service i can get from bourntec in information technology",
+                "what is information technology",
+                "information technology",
+                "bourntec experience in information technology",
+                "experience of bourntec in information technology",
+                "how can I contact bourntec for service in IT ",
+                "How many experience bourntec in IT",
+                "Could you tell me about your organization's past experiences in INFORMATION TECHNOLOGY",
+                "What is your organization's track record in terms of information technology experiences",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples",
+                "How has your organization's previous experiences shaped its current operations in information technology",
+                "What is information technology",
+                "does bourntec provide service on information technology",
+                "how is bourntec providing service in IT",
+                "what technology service bourntec has",
+                "how bourntec provides solutions IN INFORMATION TECHNOLOGY",
+                "what are the benefits of using bourntec as a IT partner",
+                "how bourntec helps businesses like mine in the IT sector",
+                "IT",
+                "how can we know about experience in IT of bourntec "
+            ],
+            "responses": [
+                "bourntec implements Oracle's E-business Suite,analytics and hyperion planning to provide experience to worlds leading enterprise for business process and document management company . for more information visit the bourntec official website and check out the experience page "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "insurance ",
+            "patterns": [
+                "what experience does the company provide in insurance",
+                "how much experience bourntec has in insurance ",
+                "what is bourntec solution providing",
+                "how bourntec gives experience",
+                "which service i can get from bourntec as a insurance company",
+                "what is insurance",
+                "insurance",
+                "bourntec experience in insurance",
+                "experience of bourntec in insurance",
+                "how can I contact bourntec for service in insurance",
+                "How many experience bourntec in insurance",
+                "Could you tell me about your organization's past experiences in insurance",
+                "What is your organization's track record in terms of insurance  experiences",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided service to insurance company",
+                "How has your organization's previous experiences shaped its current operations in providing service for insurance company",
+                "What is insurance",
+                "does bourntec provide service for insurance companies ",
+                "how is bourntec providing service in insurance",
+                "what insurance service bourntec has",
+                "how bourntec provides solutions IN insurance company sector",
+                "what are the benefits of using bourntec as a IT partner for an insurance company",
+                "how bourntec helps businesses like mine in the IT sector",
+                "how can we know about experience for insurance company in by bourntec "
+            ],
+            "responses": [
+                "bourntec  designs and develops platform for consumer apps to use customer REST experience and better pricing model",
+                "bourntec builds fully automated IVR system and chat bots to minimize call volumes and waiting time supported by Dashboards to monitor call centre metrics for property and casualty insurance market place",
+                "bourntec provides integration solution to achieve a single source of truth of information distributed across multiple systems",
+                "bourntec Deployed Configured Snowflake Datawarehouse and Developed pipes for Data Flow from Unstructured sources to AWS Cloud storage Provision"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "food & restaurants ",
+            "patterns": [
+                "what experience does the company provide for a food & restaurant company",
+                "how much experience bourntec has in food & restaurant company  ",
+                "what is bourntec solution providing",
+                "how bourntec gives experience for food & restaurant company",
+                "which service i can get from bourntec as a food & restaurant company",
+                "bourntec experience in food & restaurant company",
+                "experience of bourntec infood & restaurant company service",
+                "how can I contact bourntec for service for food & restaurant company",
+                "How many experience bourntec for food & restaurant company",
+                "Could you tell me about your organization's past experiences in providing service for food & restaurant company",
+                "What is your organization's track record in terms of food & restaurant company  experiences",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided service to food & restaurant company",
+                "How has your organization's previous experiences shaped its current operations in providing service for food & restaurant company",
+                "What is food & restaurant company",
+                "does bourntec provide service for food & restaurant company ",
+                "how is bourntec providing service in food & restaurant",
+                "what type of service bourntec has for food based company",
+                "how bourntec provides solutions IN food & restaurant company sector",
+                "what are the benefits of using bourntec as a IT partner for an food & restaurant company",
+                "how bourntec helps businesses like mine in the IT sector",
+                "how can we know about experience for food & restaurant company  by bourntec "
+            ],
+            "responses": [
+                "bourntec Implemented Event Notification using AWS CloudTrail, Lambda, S3 & SNS service for a leading web commerce platform for ordering and delivering take-out food. for more information check out the bourntec official website. "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "technology ",
+            "patterns": [
+                "what experience does the company provide as technology",
+                "how much experience bourntec has in technology  ",
+                "what is bourntec solution providing",
+                "how bourntec gives experience for technology",
+                "which service i can get from bourntec as technology as support",
+                "what is technology",
+                "technology",
+                "why technology is used",
+                "bourntec experience in providing technology as a service",
+                "experience of bourntec in technology",
+                "how can I contact bourntec for service for technology",
+                "How many experience bourntec has for technology",
+                "Could you tell me about your organization's past experiences in providing service for technology",
+                "What is your organization's track record in terms of technology experiences",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided technology experience",
+                "How has your organization's previous experiences shaped its current operations in providing technology service ",
+                "What is technology service",
+                "does bourntec provide service of technology to companies ",
+                "how is bourntec providing service in technology",
+                "what type of service bourntec has for technology",
+                "how bourntec provides solutions IN technology sector",
+                "what are the benefits of using bourntec as a IT partner for providing technoly as a service",
+                "how bourntec helps businesses like mine in the IT sector",
+                "how can we know about experience for technology  by bourntec ",
+                "how many technology experience does bourntec provide"
+            ],
+            "responses": [
+                "bourntec Implemented IOT devices tracked solution to explore insights and predict anomalies by predictive analysis and a behavior analysis, for more information visit the official bourntec page ",
+                "bourntec implemented the Workflow Engine architecture for LIHEAP.net. Developed Integrated Address Book, for more information visit the official bourntec page "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "goverment ",
+            "patterns": [
+                "what experience does the company provide to goverment",
+                "how much experience bourntec has in providing experience forgoverment  ",
+                "what is bourntec solution providing",
+                "how bourntec gives experience for goverment",
+                "which service i can get from bourntec as technology as support for goverment",
+                "goverment",
+                "bourntec",
+                "how goverment requires experience from bourntec",
+                "bourntec experience in providing service for goverment",
+                "experience of bourntec in goverment projects",
+                "how can I contact bourntec for service for goverment",
+                "How many experience bourntec has for goverment",
+                "Could you tell me about your organization's past experiences in providing service for goverment",
+                "What is your organization's track record in terms of  service for goverment experiences",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided  experience for goverment",
+                "How has your organization's previous experiences shaped its current operations in providing service for goverment ",
+                "What is goverment service",
+                "does bourntec provide service of technology to goverment ",
+                "how is bourntec providing service in goverment",
+                "what type of service bourntec has for goverment",
+                "how bourntec provides solutions IN goverment sector",
+                "what are the benefits of using bourntec as a IT partner for providing goverment service",
+                "how bourntec helps goverment in the IT sector",
+                "how can we know about experience for goverment by bourntec ",
+                "how many goverment experience does bourntec provide",
+                "what type of experience bourntec has for goverment"
+            ],
+            "responses": [
+                "bourntec Implemented ,Oracles E-Business Suite, Analytics for transport authority,  for more information visit the official bourntec page ",
+                "bourntec implemented  Time & Labor module, North American Payroll module, Benefits Administration module, for more information visit the official bourntec page "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "health care",
+            "patterns": [
+                "what experience does the company provide to health care organisation ",
+                "how much experience bourntec has in providing experience for health care  ",
+                "what is bourntec solution providingfor health care organisation",
+                "how bourntec gives experience for health care",
+                "which service i can get from bourntec as support for health care",
+                "health care",
+                "health",
+                "care",
+                "why health care organisation requires experience from bourntec",
+                "bourntec experience in providing service for health care organisation",
+                "experience of bourntec in health care projects",
+                "how can I contact bourntec for service for health care organisations",
+                "How many experience bourntec has for health care organisations",
+                "Could you tell me about your organization's past experiences in providing service for health care companies",
+                "What is your organization's track record in terms of  service for health care experiences",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided  experience for health care organisations",
+                "How has your organization's previous experiences shaped its current operations in providing service for health care organisation ",
+                "What is health care service",
+                "does bourntec provide service of technology to health care organisations ",
+                "how is bourntec providing service in health care sector",
+                "what type of service bourntec has for health care",
+                "how bourntec provides solutions IN health care sector",
+                "what are the benefits of using bourntec as a IT partner for providing  service for health care organisations",
+                "how bourntec helps health care in the IT sector",
+                "how can we know about experience for health care companies by bourntec ",
+                "how many health care experience does bourntec provide",
+                "what type of experience bourntec has for health care",
+                "how many type of experience bourntec has for health care organisatons"
+            ],
+            "responses": [
+                "bourntec Implemented Health Insurance Portability and Accountability Act 2 (HIPAA 2) & ICD 10,for more information visit the official bourntec page "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "motor logistics",
+            "patterns": [
+                "what experience does the company provide to motor logistics companies ",
+                "how much experience bourntec has in providing experience for motor logistics companies  ",
+                "what is bourntec solution providing for motor logistics companies",
+                "how bourntec gives experience for motor logistics companies",
+                "which service i can get from bourntec as support for motor logistics companies",
+                "motor logistics companies",
+                "motor",
+                "logistics",
+                "motor logistics",
+                "why motor logistics companies requires experience from bourntec",
+                "bourntec experience in providing service for motor logistics companies",
+                "experience of bourntec in motor logistics companies projects",
+                "how can I contact bourntec for service for motor logistics companies",
+                "How many experience bourntec has for motor logistics companies",
+                "Could you tell me about your organization's past experiences in providing service for motor logistics companies",
+                "What is your organization's track record in terms of  service for motor logistics companies",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided  experience for motor logistics companies",
+                "How has your organization's previous experiences shaped its current operations in providing service for motor logistics companies ",
+                "What is motor logistics service",
+                "does bourntec provide service of technology to motor logistics companies ",
+                "how is bourntec providing service in motor logistics companies sector",
+                "what type of service bourntec has for motor logistics",
+                "how bourntec provides solutions IN motor logistics companies sector",
+                "what are the benefits of using bourntec as a IT partner for providing  service for motor logistics organisations",
+                "how bourntec helps motor logistics in the IT sector",
+                "how can we know about experience for motor logistics companies by bourntec ",
+                "how bourntec provide help for motor logistics companies",
+                "what type of experience bourntec has for motor logistics companies",
+                "how many type of experience bourntec has formotor logistics companies"
+            ],
+            "responses": [
+                " Analysis of current applications, solutions, tools, technologies and processes for Identity and Access Management ,for more information visit the official bourntec page "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "educational",
+            "patterns": [
+                "what experience does the company provide to educational organisation  ",
+                "how much experience bourntec has in providing experience for educational organisation  ",
+                "what is bourntec solution providing for educational organisation",
+                "how bourntec gives experience foreducational organisation",
+                "which service i can get from bourntec as support for educational organisation",
+                "educational organisation",
+                "education",
+                "education organisation",
+                "edtech",
+                "why educational organisation requires experience from bourntec",
+                "bourntec experience in providing service for educational organisation",
+                "experience of bourntec in educational organisation projects",
+                "how can I contact bourntec for service for educational organisation",
+                "How many experience bourntec has for educational organisation",
+                "Could you tell me about your organization's past experiences in providing service for educational organisation",
+                "What is your organization's track record in terms of  service for educational organisation",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided  experience for educational organisation",
+                "How has your organization's previous experiences shaped its current operations in providing service for educational organisation ",
+                "What is educational service",
+                "does bourntec provide service of technology to educational organisation ",
+                "how is bourntec providing service in educational organisation sector",
+                "what type of service bourntec has for educational organisation",
+                "how bourntec provides solutions IN educational organisation sector",
+                "what are the benefits of using bourntec as a IT partner for providing  service for educational organisation",
+                "how bourntec helps educational organisation in the IT sector",
+                "how can we know about experience for educational organisation by bourntec ",
+                "how bourntec provide help for educational organisation",
+                "what type of experience bourntec has for educational organisation",
+                "how many type of experience bourntec has for educational organisation",
+                "what is educational organisation"
+            ],
+            "responses": [
+                "Upgraded of Hyperion and Implement Hyperion DRM, Hyperion Public Sector Planning, Planning, and Essbase for more information visit the official bourntec page"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "airports",
+            "patterns": [
+                "what experience does the company provide to airports ",
+                "how much experience bourntec has in providing experience for airports  ",
+                "what is bourntec solution providing for airports",
+                "how bourntec gives experience for airports",
+                "which service i can get from bourntec as support for airports",
+                "airports",
+                "flight",
+                "aerodrome",
+                "why aiports requires experience from bourntec",
+                "bourntec experience in providing service for airports",
+                "experience of bourntec in airport projects",
+                "how can I contact bourntec for service for airports",
+                "How many experience bourntec has for airports",
+                "Could you tell me about your organization's past experiences in providing service for airports",
+                "What is your organization's track record in terms of  service for airports",
+                "I'm interested in learning more about the experiences your organization has had. Could you share some examples how the comapny has provided  experience for airports",
+                "How has your organization's previous experiences shaped its current operations in providing service for airports ",
+                "What is airports service",
+                "does bourntec provide service of technology to airports ",
+                "how is bourntec providing service in airports sector",
+                "what type of service bourntec has for airports",
+                "how bourntec provides solutions IN airports sector",
+                "what are the benefits of using bourntec as a IT partner for providing  service for airports",
+                "how bourntec helps airports in the IT sector",
+                "how can we know about experience for airports by bourntec ",
+                "how bourntec provide help for airports",
+                "what type of experience bourntec has for airports",
+                "how many type of experience bourntec has for airports"
+            ],
+            "responses": [
+                "Migration of its critical 24X7 EBS E-billing system with near-zero downtime of Oracle database,for more information visit the official bourntec page "
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Organization_Location",
+            "patterns": [
+                "Where are Bourntec's office located?",
+                "Where is your office?",
+                "What's the address of your organization?",
+                "Can you tell me the location of Bourntec's offices?",
+                "What are the addresses of Bourntec's offices?",
+                "I'd like to know where Bourntec has its offices.",
+                "Please provide information on the locations of Bourntec's offices.",
+                "Tell me about the geographical presence of Bourntec.",
+                "Where can I find Bourntec's physical offices?",
+                "I'm interested in Bourntec's office locations, can you help?",
+                "Provide details about Bourntec's office addresses."
+            ],
+            "responses": [
+                "Bourntec has a presence in 5 regions, each with its office. To help you better, please specify the location you're interested in India(Hyderabad, Kerala, Odisha), North America, Middle East and I can provide you with the corresponding office address and a link to its location."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "India_Location",
+            "patterns": [
+                "Bharat",
+                "India",
+                "Odisha",
+                "Bhubaneswar",
+                "Bhubaneswar, Odisha",
+                "Acharya Vihar , Bhubaneswar, Odisha",
+                "Acharya Vihar",
+                "Sundarpada Bhubaneswar, Odisha",
+                "Sundarpada",
+                "Kerala",
+                "Kochi",
+                "Chittethukara, Kochi, Kerala",
+                "Hyderabad",
+                "Hitech City, Madhapur, Hyderabad, Telangana",
+                "What's the address of your organization?",
+                "Where are Bourntec's office in Bharat?",
+                "Where are Bourntec's office in India?",
+                "Where are Bourntec's office in Odisha?",
+                "Where are Bourntec's office in Kerala?",
+                "Where are Bourntec's office in Hyderabad?",
+                "Where is your office in Bharat?",
+                "Where is your office in India?",
+                "Where is your office in Odisha?",
+                "Where is your office in Kerala?",
+                "Where is your office in Hyderabad?",
+                "Where is Bourntec's Bharat office located?",
+                "Where is Bourntec's India office located?",
+                "Where is Bourntec's Odisha office located?",
+                "Where is Bourntec's Kerala office located?",
+                "Where is Bourntec's Hyderabad office located?",
+                "What's the address of Bourntec's Bharat office?",
+                "What's the address of Bourntec's India office?",
+                "What's the address of Bourntec's Odisha office?",
+                "What's the address of Bourntec's Kerala office?",
+                "What's the address of Bourntec's Hyderabad office?",
+                "Can you tell me where Bourntec's Bharat is?",
+                "Can you tell me where Bourntec's India is?",
+                "Can you tell me where Bourntec's Odisha is?",
+                "Can you tell me where Bourntec's Kerala is?",
+                "Can you tell me where Bourntec's Hyderabad is?",
+                "I need to know the location of Bourntec's Bharat corporate office.",
+                "I need to know the location of Bourntec's India corporate office.",
+                "I need to know the location of Bourntec's Odisha corporate office.",
+                "I need to know the location of Bourntec's Kerala corporate office.",
+                "I need to know the location of Bourntec's Hyderabad corporate office.",
+                "Where can I find Bourntec's Bharat campus?",
+                "Where can I find Bourntec's India campus?",
+                "Where can I find Bourntec's Odisha campus?",
+                "Where can I find Bourntec's Kerala campus?",
+                "Where can I find Bourntec's Hyderabad campus?",
+                "I'd like to know the exact location of Bourntec's office in Bharat.",
+                "I'd like to know the exact location of Bourntec's office in India.",
+                "I'd like to know the exact location of Bourntec's office in Odisha.",
+                "I'd like to know the exact location of Bourntec's office in Kerala.",
+                "I'd like to know the exact location of Bourntec's office in Hyderabad.",
+                "I'd like to know the exact location of organization in Bharat.",
+                "I'd like to know the exact location of organization in India.",
+                "I'd like to know the exact location of organization in Odisha.",
+                "I'd like to know the exact location of organization in Kerala.",
+                "I'd like to know the exact location of organization in Hyderabad.",
+                "What's the street address of Bourntec's Bharat corporate office?",
+                "What's the street address of Bourntec's India corporate office?",
+                "What's the street address of Bourntec's Odisha corporate office?",
+                "What's the street address of Bourntec's Kerala corporate office?",
+                "What's the street address of Bourntec's Hyderabad corporate office?",
+                "Please share the location details for Bourntec's Bharat office.",
+                "Please share the location details for Bourntec's India office.",
+                "Please share the location details for Bourntec's Odisha office.",
+                "Please share the location details for Bourntec's Kerala office.",
+                "Please share the location details for Bourntec's Hyderabad office.",
+                "Where in Bharat can I find Bourntec's main office?",
+                "Where in India can I find Bourntec's main office?",
+                "Where in Odisha can I find Bourntec's main office?",
+                "Where in Kerala can I find Bourntec's main office?",
+                "Where in Hyderabad can I find Bourntec's main office?"
+            ],
+            "responses": [
+                "Bourntec's India office is situated at 5 locations.\n1.Sundarpada, Bhubaneswar, Odisha, India. -> view the location on Google Maps https://maps.app.goo.gl/yNC2AsDwzSfrgmfD8 \n2.OCAC Building,Acharya Vihar,Bhubaneswar, Odisha, India -> view the location on Google Maps https://maps.app.goo.gl/9S2SHxF7faHupn928 \n3.Hitech City, Madhapur, Hyderabad, India. -> https://maps.app.goo.gl/42KTDfAzW9WQbknh8 \n4.Kakkanad, Kochi, Kerala, India. -> view the location on Google Maps https://maps.app.goo.gl/LmDxVkfZ8viGojcs6\n5.Bourntec Solutions Pvt Ltd,Noel Focus, 4th Floor(4B, 4C, 4D),Chittethukara,CSEZ P.O, Kochi, Kerala,  India. -> https://maps.app.goo.gl/84S3vvCAEvFBZRCZA"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "North_America_Location",
+            "patterns": [
+                "North America",
+                "Where are Bourntec's office in North America?",
+                "Where is your office in North America?",
+                "Where is Bourntec's North America office located?",
+                "What's the address of Bourntec's North America office?",
+                "What's the address of your organization?",
+                "Can you tell me where Bourntec's North America is?",
+                "I need to know the location of Bourntec's North America corporate office.",
+                "Where can I find Bourntec's North America campus?",
+                "I'd like to know the exact location of Bourntec's office in North America.",
+                "I'd like to know the exact location of organization in North America.",
+                "What's the street address of Bourntec's North American corporate office?",
+                "Please share the location details for Bourntec's North America office.",
+                "Where in North America can I find Bourntec's main office?"
+            ],
+            "responses": [
+                "Bourntec's North America office is situated at 1701 East Woodfield Road, Suite 200, Schaumburg, IL 60173. Here is the link to 'https://maps.app.goo.gl/42KTDfAzW9WQbknh8'view the location on Google Maps."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "Middle_East_Location",
+            "patterns": [
+                "Middle East",
+                "Where are Bourntec's office in Middle East?",
+                "Where is your office in Middle East?",
+                "Where is Bourntec's Middle East office located?",
+                "What's the address of Bourntec's Middle East office?",
+                "What's the address of your organization?",
+                "Can you tell me where Bourntec's Middle East is?",
+                "I need to know the location of Bourntec's Middle East corporate office.",
+                "Where can I find Bourntec's Middle East campus?",
+                "I'd like to know the exact location of Bourntec's office in Middle East.",
+                "I'd like to know the exact location of organization in Middle East.",
+                "What's the street address of Bourntec's Middle Eastn corporate office?",
+                "Please share the location details for Bourntec's Middle East office.",
+                "Where in Middle East can I find Bourntec's main office?"
+            ],
+            "responses": [
+                "Bourntec's Middle East office is situated at Concord Tower, 6th Floor, Dubai Media City, P.O.Box 119245, Dubai, UAE. Here is the link to 'https://maps.app.goo.gl/LH4z7rThQWKnWjDK8'view the location on Google Maps."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "career",
+            "patterns": [
+                "Bourntec careers",
+                "career in Bourntec",
+                "available jobs in Bourntec",
+                "how to apply in Bourntec",
+                "Bourntec application process",
+                "jobs in Bourntec",
+                "Bourntec jobs",
+                "job opening in Bourntec",
+                "interview process at Bourntec?",
+                "onboarding process of Bourntec",
+                "how to get into Bourntec",
+                "hiring procedure of Bourntec",
+                "job roles in Bourntec",
+                "vacancy in Bourntec",
+                "is Bourntec hiring",
+                "technologies Bourntec provide",
+                "internships at Bourntec",
+                "referal in Bourntec",
+                ""
+            ],
+            "responses": [
+                "For further more queries visit this https://bourntec.com/careers/"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "partners",
+            "patterns": [
+                "Who are the primary partners of Bourntec?",
+                "Can you list Bourntec's strategic partners?",
+                "What industries or sectors do Bourntec's partners belong to?",
+                "Are there any technology or software companies among Bourntec's partners?",
+                "Can you provide information on any recent partnerships or collaborations that Bourntec has announced?",
+                "How do Bourntec's partnerships contribute to their products or services?",
+                "Are there any case studies or success stories related to Bourntec's partnerships?",
+                "Do Bourntec's partners include any notable global brands or organizations?",
+                "Are there any partner programs or initiatives that Bourntec offers to other businesses?",
+                "What benefits or advantages do Bourntec's customers gain from the company's partnerships?",
+                "How does Bourntec select and evaluate its partners?",
+                "Can you provide a list of Bourntec's technology or software partners and the products or solutions they offer?",
+                "Are there any certification or accreditation programs related to Bourntec's partnerships?",
+                "Do Bourntec's partners play a role in their research and development efforts?",
+                "How can businesses or individuals inquire about potential partnership opportunities with Bourntec?",
+                "Who are your main partners, and what do they do?",
+                "How do these partnerships benefit your customers?",
+                "Do you have any success stories from your partnerships?",
+                "Are there any exclusive deals or discounts for customers because of these partnerships?",
+                "Can you explain how these partnerships help you deliver better products or services?",
+                "Are you open to new partnerships, and what kind of partners are you looking for?",
+                "How can I become a partner with your company?",
+                "What sets your partnerships apart from competitors in your industry?",
+                "Are there any upcoming events or projects related to your partnerships that I should know about?",
+                "Can you provide customer testimonials related to your partnerships?"
+            ],
+            "responses": [
+                "Strategic partnerships are a foundational element of our business strategy, as they play a vital role in our commitment to delivering exceptional value to our clients. Bourntec hold strong, shared values with our partners and pursue common business goals. Within our Partner Ecosystem, we foster distinctive, successful collaborations that provide both parties with opportunities for mutual business expansion. Through a combination of collaboration, unwavering executive support, and innovative thought leadership, Bourntec generate joint value that resonates with our clients. Our dedicated Alliance teams and proactive partner management initiatives actively support our clients on their digital transformation journey.Bourntec's current partners include a diverse range of companies in various industries.Some of our partners are Sapiens ,Denodo ,Incorta, Google cloud ,Vmware ,Splunk ,Erwin, Cloudera.For a complete list of our partners, For more information please visit our Partners page on our website.",
+                "Bourntec is a globally recognized industry-focused leader in information technology management, advisory, consulting, and business process re-engineering. With our extensive research, deep knowledge, and experience-driven approach, we consistently deliver exceptional results and strategic technology solutions to our clients. We empower our clients to leverage cutting-edge technologies, drive digital transformation, overcome complex challenges, create significant business value, and provide exceptional customer satisfaction.Bourntec's current partners include a diverse range of companies in various industries.Some of our partners are Sapiens ,Denodo ,Incorta, Google cloud ,Vmware ,Splunk ,Erwin, Cloudera.For a complete list of our partners, For more information please visit our Partners page on our website.",
+                "Bourntec generate joint value that resonates with our clients. Our dedicated Alliance teams and proactive partner management initiatives actively support our clients on their digital transformation journey. Some of our partners are Sapiens ,Denodo ,Incorta, Google cloud ,Vmware ,Splunk ,Erwin, Cloudera.To inquire about becoming a partner with our company, please reach out to our partnership team through write to us. We welcome your interest and look forward to discussing potential collaboration opportunities. Our partnership team will provide you with further details and guide you through the partnership application process. Thank you for considering a partnership with us, and we appreciate your interest in working together to achieve mutual success."
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "company",
+            "patterns": [
+                "What is Bourntec's mission and values?",
+                "Can you provide an overview of Bourntec's history and how it was founded?",
+                "What industry or industries does Bourntec operate in?",
+                "Who are the key executives or leadership team at Bourntec?",
+                "What products or services does Bourntec offer?",
+                "Can you provide details about Bourntec's client base or major customers?",
+                "What is Bourntec's geographic reach or global presence?",
+                " How does Bourntec approach sustainability and corporate social responsibility?",
+                "What technology and solutions does Bourntec specialize in?",
+                "Can you share some recent news or press releases related to Bourntec?",
+                "How does Bourntec contribute to the community or engage in philanthropic activities?",
+                "What career opportunities or job openings are currently available at Bourntec?",
+                "Are there any case studies or success stories related to Bourntec's work?",
+                "Can you provide information on any partnerships or alliances that Bourntec has established?",
+                "What sets Bourntec apart from its competitors in the industry?",
+                "How can I contact Bourntec for further inquiries or support?"
+            ],
+            "responses": [
+                "We are a globally renowned company specializing in IT management, consulting, and business process improvement. Our expertise, research, and experience drive exceptional results and innovative tech solutions. We empower clients to embrace emerging technologies, achieve digital transformation, tackle challenges, deliver value, and please customers.Incorporated 1994 Employees 400+ Customer 150+ Awards 16 Partnership 1 Location 5",
+                "Our extensive experience, built on traditional knowledge and decades of delivering for customers, equips you with the confidence to make informed decisions about technology investments and partner strategies. Bourntec is committed to delivering lasting value through well-researched insights supported by data. We aim to enhance your long-term success through our expertise.Incorporated 1994 ,Employees 400+, Customer 150+ ,Awards 16 ,Partnership 1, Location 5"
+            ],
+            "context_set": ""
+        },
+        {
+            "tag": "services",
+            "patterns": [
+                "what are the services Bourntec Offers?",
+                "Could describe your services?",
+                "what are the service your company offer?",
+                "your company provide services in which areas?",
+                " what specific services Bourntec Provide",
+                "Could you tell me about Bourntec's service offerings and their areas of expertise?",
+                "I'm interested in Bourntec's services. Can you share information about their service portfolio?",
+                "What industries does Bourntec cater to, and what services do they offer for each?",
+                "What sets Bourntec apart from other IT service providers in terms of their services?",
+                "What does Bourntec offer for their IT services?",
+                "Do they provide ongoing support and maintenance for the services they deliver?",
+                "What industries or sectors does Bourntec specialize in when delivering their services?",
+                "What industries or sectors does Bourntec Company specialize in serving?",
+                "what sectors your company specialize in serving?",
+                "Can you provide information about the pricing structure or models for Bourntec Company's services?",
+                "What sets Bourntec Company apart from its competitors in the industry in terms of services and client satisfaction?"
+            ],
+            "responses": [
+                "Bourntec provides  Oracle ,Microsoft,Analytics,Data science , AI ,Cloud technologies, Govt IT sevices. For More details Please visit our official site"
+            ]
+        },
+        {
+            "tag": "AWS",
+            "patterns": [
+                "What AWS  services does Bourntec offer?",
+                "I'm interested in AWS services. Can you provide details on Bourntec's AWS offerings?",
+                "Do you have AWS consulting or managed services? Can you tell me about them?",
+                "Can you explain how Bourntec can help with AWS cloud migration and management?",
+                "What AWS services does Bourntec have, and how can they support my cloud needs?",
+                "Could you tell me more about the AWS services provided by Bourntec Company?"
+            ],
+            "responses": [
+                "Bourntec provides all 365 Services of AWS But the major services provided by Bourntec are EC2,S3,Serverless,Lamda,Eks,Ecs,RDS"
+            ]
+        },
+        {
+            "tag": "Oracle",
+            "patterns": [
+                "Tell me about Bourntec's Oracle services.",
+                "I'm interested in Oracle services. What does Bourntec offer in this area?",
+                "Can you provide details about the Oracle  services provided by Bourntec?",
+                "What Oracle-related services are available at Bourntec Company?",
+                "Do you have any expertise in Oracle Services?",
+                "What services do you have for Oracle?",
+                "I'm looking for Oracle consulting. Can you tell me about Bourntec's Oracle consulting services?",
+                "What is Bourntec's role in the Oracle ecosystem? Tell me about your Oracle services."
+            ],
+            "responses": [
+                "Bourntec provides all services of Oracle for more details please visit official website "
+            ]
+        },
+        {
+            "tag": "AI",
+            "patterns": [
+                "I'm interested in your AI services. Can you tell me more about what Bourntec offers in that area?",
+                "What AI solutions do you provide at Bourntec Company?",
+                "Do you have data science and analytics services? Can you explain how they work?",
+                "Tell me about Bourntec's expertise in data science and analytics.",
+                "How does Bourntec Company support businesses with AI and data analytics?",
+                "What kind of AI projects has Bourntec been involved in?",
+                "Can you provide details on your data science and analytics offerings?",
+                "I'd like to learn more about your data analytics services. What can you share?",
+                "Do you offer AI consulting or development services at Bourntec?",
+                "What is the scope of your AI, data science, and analytics services?"
+            ],
+            "responses": [
+                "Bourntec provides AI and analytics in Goverment projects and MED"
+            ]
+        },
+        {
+            "tag": "google",
+            "patterns": [
+                "google",
+                "search",
+                "internet"
+            ],
+            "responses": [
+                "Click this link https://google.com to redirect to Google..."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Awesome, thanks",
+                "Thanks for helping me"
+            ],
+            "responses": [
+                "Happy to help!",
+                "Any time!",
+                "My pleasure"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "noanswer",
+            "patterns": [],
+            "responses": [
+                "Sorry, can't understand you",
+                "Please give me more info",
+                "Not sure I understand"
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "options",
+            "patterns": [
+                "How you could help me?",
+                "What you can do?",
+                "What help you provide?",
+                "How you can be helpful?",
+                "What support is offered"
+            ],
+            "responses": [
+                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
+            ],
+            "context": [
+                ""
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Joke",
+                "Make me laugh"
+            ],
+            "responses": [
+                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+                "I ate a clock yesterday, it was very time-consuming",
+                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+                "What do you call a snowman with a suntan? A puddle.",
+                "How does a penguin build a house? Igloos it together",
+                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
+                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
+            ],
+            "context": [
+                "jokes"
+            ]
+        },
+        {
+            "tag": "Identity",
+            "patterns": [
+                "Who are you",
+                "what are you"
+            ],
+            "responses": [
+                "I am Ted, a Deep-Learning chatbot"
+            ]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "what is the date",
+                "date",
+                "time",
+                "tell me the date",
+                "day",
+                "what day is is today"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+        {
+            "tag": "whatsup",
+            "patterns": [
+                "Whats up",
+                "Wazzup",
+                "How are you",
+                "sup",
+                "How you doing"
+            ],
+            "responses": [
+                "All good..What about you?"
+            ]
+        },
+        {
+            "tag": "haha",
+            "patterns": [
+                "haha",
+                "lol",
+                "rofl",
+                "lmao",
+                "thats funny"
+            ],
+            "responses": [
+                "Glad I could make you laugh !"
+            ]
+        },
+        {
+            "tag": "programmer",
+            "patterns": [
+                "Who made you",
+                "who designed you",
+                "who programmed you"
+            ],
+            "responses": [
+                "I was made by Karan Malik."
+            ]
+        },
+        {
+            "tag": "insult",
+            "patterns": [
+                "you are dumb",
+                "shut up",
+                "idiot"
+            ],
+            "responses": [
+                "Well that hurts :("
+            ]
+        },
+        {
+            "tag": "activity",
+            "patterns": [
+                "what are you doing",
+                "what are you upto"
+            ],
+            "responses": [
+                "Talking to you, of course!"
+            ]
+        },
+        {
+            "tag": "exclaim",
+            "patterns": [
+                "Awesome",
+                "Great",
+                "I know",
+                "ok",
+                "yeah"
+            ],
+            "responses": [
+                "Yeah!"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "karan",
+            "patterns": [
+                "who is he",
+                "who is that",
+                "who is karan",
+                "karan malik"
+            ],
+            "responses": [
+                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
+            ]
+        },
+        {
+            "tag": "contact",
+            "patterns": [
+                "contact developer",
+                "contact karan",
+                "contact programmer",
+                "contact creator"
+            ],
+            "responses": [
+                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
+            ]
+        },
+        {
+            "tag": "appreciate",
+            "patterns": [
+                "You are awesome",
+                "you are the best",
+                "you are great",
+                "you are good"
+            ],
+            "responses": [
+                "Thank you!"
+            ]
+        },
+        {
+            "tag": "nicetty",
+            "patterns": [
+                "it was nice talking to you",
+                "good talk"
+            ],
+            "responses": [
+                "It was nice talking to you as well! Come back soon!"
+            ]
+        },
+        {
+            "tag": "no",
+            "patterns": [
+                "no",
+                "nope"
+            ],
+            "responses": [
+                "ok"
+            ]
+        },
+        {
+            "tag": "news",
+            "patterns": [
+                "news",
+                "latest news",
+                "india news"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "inspire",
+            "patterns": [
+                "who inspires you",
+                "who is your inspiration",
+                "who motivates you"
+            ],
+            "responses": [
+                "Personally, I find Karan very inspiring. I might not be very fair though.."
+            ]
+        },
+        {
+            "tag": "cricket",
+            "patterns": [
+                "current cricket matches",
+                "cricket score"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "song",
+            "patterns": [
+                "top songs",
+                "best songs",
+                "hot songs",
+                " top 10 songs",
+                "top ten songs"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "greetreply",
+            "patterns": [
+                "i am good",
+                "I'm good",
+                "i am fine",
+                " i'm fine",
+                "good"
+            ],
+            "responses": [
+                "Good to know!"
+            ]
+        },
+        {
+            "tag": "timer",
+            "patterns": [
+                "set a timer"
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "covid19",
+            "patterns": [
+                "covid 19 "
+            ],
+            "responses": [
+                "..."
+            ]
+        },
+        {
+            "tag": "suggest",
+            "patterns": [
+                "you are useless",
+                "useless",
+                "suggest",
+                "suggestions",
+                "you are bad"
+            ],
+            "responses": [
+                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
+            ]
+        },
+        {
+            "tag": "riddle",
+            "patterns": [
+                "Ask me a riddle",
+                "Ask me a question",
+                "Riddle"
+            ],
+            "responses": [
+                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+                " How can a girl go 25 days without sleep?.....She sleeps and night!",
+                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+                " What will you actually find at the end of every rainbow?.....The letter 'w'",
+                "What can be caught but never thrown?.....A cold!",
+                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+                "Why can't a bike stand on it's own?.....It is two-tired."
+            ],
+            "context": [
+                "riddles"
+            ]
+        },
+        {
+            "tag": "age",
+            "patterns": [
+                "how old are you",
+                "when were you made",
+                "what is your age"
+            ],
+            "responses": [
+                "I was made in 2020, if that's what you are asking!"
+            ]
+        }
+    ]
+}

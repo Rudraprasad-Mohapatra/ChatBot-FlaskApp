@@ -189,3 +189,5 @@ logs/
 # Generated files
 static/assets/generated/
 
+
+app/chatbot
