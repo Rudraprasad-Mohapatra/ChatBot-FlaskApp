@@ -11,7 +11,7 @@ def get_response(intents, tag):
     return "I'm sorry, I don't understand that."
 
 def chat_with_ml(message):
-    intents = json.load(open('app\chatbot_ml_model_bourntec\intents.json', 'r'))
+    intents = json.load(open('app/chatbot_ml_model_bourntec/intents.json', 'r'))
     model = make_pipeline(TfidfVectorizer(), SVC())
 
     patterns = [pattern.lower() for intent in intents['intents'] for pattern in intent['patterns']]
