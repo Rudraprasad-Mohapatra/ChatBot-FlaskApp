@@ -37,6 +37,7 @@
                 "Have a Good day",
                 "talk to you later",
                 "ttyl",
+                "Sayonara",
                 "i got to go",
                 "gtg"
             ],
@@ -189,7 +190,7 @@
                 "got.it.services"
             ],
             "responses": [
-                "Our oraganization offers AWS services,Cloud computing,GCP,AI,Oracle,Analysis,Govt.it.Services,Data Science."
+                "Our oraganization offers Cloud computing like AWS services, GCP, AI, Oracle, Analysis, Govt.it.Services, Data Science."
             ],
             "context_set": ""
         },
@@ -863,7 +864,7 @@
                 ""
             ],
             "responses": [
-                "For further more queries explore our website https://bourntec.com"
+                "For further more queries visit this https://bourntec.com"
             ],
             "context_set": ""
         },
@@ -1002,369 +1003,126 @@
             ]
         },
         {
-            "tag": "google",
+            "tag": "Bourntec_Cookie_Policy",
             "patterns": [
-                "google",
-                "search",
-                "internet"
+                "What does Bourntec's Cookie Policy primarily address?",
+                "How is a cookie defined in the context of Bourntec's website?",
+                "What information do cookies contain about a user's visit?",
+                "Name the three main types of cookies mentioned in Bourntec's policy.",
+                "Explain the purpose of session cookies during a browsing session.",
+                "How do persistent cookies contribute to enhancing user experience?",
+                "When are third-party cookies generated on Bourntec's website?",
+                "What are the three categories in which cookies are classified based on their purpose?",
+                "Why are Strictly Necessary Cookies crucial for website functionality?",
+                "What distinguishes Targeting Cookies from other cookie types?",
+                "How do Performance Cookies assist in improving site performance?",
+                "What options do users have for controlling and managing cookies on their devices?",
+                "How can users opt-in or opt-out of specific cookie categories on Bourntec's website?",
+                "Why is it mentioned that blocking all cookies may impact certain parts of the site?",
+                "How can users block third-party cookies or cookies from a specific site?",
+                "What is the recommended action if a user wants to delete all cookies when closing the browser?",
+                "What type of information do Targeting Cookies typically collect?",
+                "How are users notified about updates to Bourntec's Cookie Policy?",
+                "Why is periodic checking of the Cookie Policy recommended for users?",
+                "What is the contact email address provided for inquiries related to personal data processing at Bourntec?"
             ],
             "responses": [
-                "Click this link https://google.com to redirect to Google..."
+                    "Bourntec's Cookie Policy primarily addresses the use, types, categorization, and user controls related to cookies on its website.",
+                    "In the context of Bourntec's website, a cookie is defined as a piece of information sent to a user's computer during site access, containing details about the visit and volunteered information.",
+                    "Cookies contain information about a user's visit, including actions on the website and any volunteered information.",
+                    "The three main types of cookies mentioned are session cookies, persistent cookies, and third-party cookies.",
+                    "Session cookies link user actions during a browsing session, expiring at the end of the session, avoiding user inconvenience and aiding navigation.",
+                    "Persistent cookies store user preferences beyond a session, contributing to an enhanced user experience by recalling preferences and actions.",
+                    "Third-party cookies are generated when the website includes content from external sites or when a user clicks on third-party links provided by the active site.",
+                    "Cookies are classified into Strictly Necessary Cookies, Targeting Cookies, and Performance Cookies based on their purpose.",
+                    "Strictly Necessary Cookies are crucial for website functionality as they are necessary for services like privacy preferences, logging in, and form submissions.",
+                    "Targeting Cookies are set by advertising partners, building user profiles for targeted ads without directly storing personal information.",
+                    "Performance Cookies count visits, analyze traffic sources, and provide aggregated data to measure and enhance the site's performance.",
+                    "Users can control cookies through browser settings, including viewing, deleting, or blocking them individually, or deleting all when closing the browser.",
+                    "Users can opt-in or opt-out of specific cookie categories through the Cookie Settings on the website.",
+                    "Blocking all cookies may impact certain parts of the site because some cookies are essential for website functionality.",
+                    "Users can block third-party cookies or cookies from a specific site through browser settings.",
+                    "If a user wants to delete all cookies when closing the browser, they can configure their browser settings accordingly.",
+                    "Targeting Cookies typically collect non-personal information to build user profiles for displaying relevant advertisements.",
+                    "Users are encouraged to periodically check for updates to Bourntec's Cookie Policy. Specific advisories may be provided for significant changes.",
+                    "Periodic checking of the Cookie Policy is recommended for users to stay informed about any changes or updates to the policy.",
+                    "For inquiries related to personal data processing, users can contact Bourntec at legal@bourntec.com."
             ]
         },
         {
-            "tag": "thanks",
+            "tag": "Terms_of_use",
             "patterns": [
-                "Thanks",
-                "Thank you",
-                "That's helpful",
-                "Awesome, thanks",
-                "Thanks for helping me"
+                "What is the definition of User in the context of www.bourntec.com?",
+                "Who owns the domain address www.bourntec.com?",
+                "What does the bourntec name and logo represent, and how can they be used?",
+                "Can users copy or distribute materials from the site without prior written permission?",
+                "What potential consequences may arise from unauthorized use of materials on the site?",
+                "Under what circumstances may bourntec terminate a user's access to the site?",
+                "What warranties does bourntec provide regarding the information, data, and products available on the site?",
+                "In what manner are the site and its content provided by bourntec?",
+                "Can bourntec unilaterally change or discontinue aspects of the site, and if so, which ones?",
+                "What types of damages is bourntec not liable for in relation to the use of the site?",
+                "What obligations does the user have to indemnify bourntec against?",
+                "How does bourntec describe the reliability of the information contained on the site?",
+                "What does the site provide links to, and what caution is given to users regarding third-party websites?",
+                "What risks do users bear in dealing with third-party content accessible through the site?",
+                "What warranty does bourntec make regarding the site meeting user requirements?",
+                "What assurance does bourntec provide regarding the uninterrupted availability of the site?",
+                "What disclaimer does bourntec make regarding the accuracy of results obtained from using the site?",
+                "Can bourntec guarantee that the site will be error-free?",
+                "What is the user's responsibility regarding dealing with third parties through the site?",
+                "How does bourntec advise users to approach third-party content, and what risks are associated with it?"
             ],
             "responses": [
-                "Happy to help!",
-                "Any time!",
-                "My pleasure"
-            ],
-            "context": [
-                ""
+                "The term User refers to an individual browsing the website www.bourntec.com.",
+                "The domain address www.bourntec.com is owned by bourntec.",
+                "The bourntec name and logo are trademarks owned by bourntec, requiring prior written consent for any usage.",
+                "No, users cannot copy, modify, reproduce, republish, upload, transmit, post, or distribute materials from the site without prior written permission.",
+                "Unauthorized use of materials may violate copyright, trademark, and other applicable laws, potentially resulting in criminal or civil penalties.",
+                "bourntec may terminate a user's access to the site at any time for any reason.",
+                "bourntec makes no warranties, express or implied, regarding the information, data, statements, or products available on the site.",
+                "The site and its content are provided on an 'as is' and 'as available' basis by bourntec.",
+                "Yes, bourntec may unilaterally change or discontinue any aspect of the site, including its content or features.",
+                "bourntec will not be liable for damages of any kind, including direct, indirect, incidental, or consequential damages, arising out of the use of the site.",
+                "The user agrees to indemnify, defend, and hold bourntec harmless from all losses, expenses, damages, and costs, including reasonable attorneys’ fees, arising out of or relating to any misuse by the user of the content and services provided on the site.",
+                "The information contained in the site has been obtained from sources believed to be reliable. However, bourntec disclaims all warranties as to the accuracy, completeness, or adequacy of such information.",
+                "The site provides links to websites and access to content, products, and services from third parties. Users are cautioned to review the policies posted by other websites regarding privacy and other topics before use.",
+                "Users bear all risks associated with dealing with any third-party content accessible through the site, including opinions, advice, statements, and advertisements.",
+                "bourntec makes no warranty that the site will meet user requirements.",
+                "bourntec does not provide assurance of uninterrupted, timely, secure, or error-free site availability.",
+                "bourntec disclaims all warranties regarding the accuracy, completeness, or adequacy of results obtained from using the site or any services offered through the site.",
+                "No, bourntec does not guarantee that the site will be error-free.",
+                "The user is responsible for dealing with third parties through the site.",
+                "bourntec advises users to peruse the policies posted by other websites regarding privacy and other topics before using third-party content. Users bear all risks associated with the use of such content."
             ]
         },
         {
-            "tag": "noanswer",
-            "patterns": [],
-            "responses": [
-                "Sorry, can't understand you",
-                "Please give me more info",
-                "Not sure I understand"
-            ],
-            "context": [
-                ""
-            ]
-        },
-        {
-            "tag": "options",
+            "tag": "Contact_us",
             "patterns": [
-                "How you could help me?",
-                "What you can do?",
-                "What help you provide?",
-                "How you can be helpful?",
-                "What support is offered"
+                "What is the address of Bourntec's North America office in Schaumburg, IL, USA?",
+                "Where is Bourntec's office located in the Middle East, specifically in Dubai, UAE?",
+                "In which area and city is Bourntec's office situated in Hyderabad, Telangana, India?",
+                "What is the address of Bourntec's office in Kochi, Kerala, India?",
+                "Can you provide details about another Bourntec office in Kochi, Kerala, and its address?",
+                "Where is Bourntec's office located in Bhubaneswar, Odisha, India?",
+                "What information can you provide about another Bourntec office in Bhubaneswar, Odisha?",
+                "What are the various inquiry-specific email addresses mentioned in the Write To Us section?",
+                "Can you summarize Bourntec's role and focus as mentioned in the company overview?",
+                "What is the general email address provided for contact in the provided information?",
+                "When was Bourntec founded, and what is its core focus in the IT industry?",
+                "How many employees does Bourntec currently have, and how many customers does it serve?",
+                "What is the significance of the company name Bourntec and how does it reflect the company's commitment?",
+                "Can you provide details about Bourntec's leadership, specifically the President, Srujana?",
+                "Who is the CEO of the company?",
+                "What is Bourntec's mission, and how does it align with its growth strategy for 2022-2025?",
+                "How does Bourntec plan to achieve accelerated growth, and what are the key components of its growth strategy?",
+                "In terms of talent, what is Bourntec's approach to rapid growth in core competencies and hiring in operating geographies?",
+                "How does Bourntec plan to strengthen partnerships, especially with a focus on hyper-growth alliances globally?",
+                "What is the operating model Bourntec follows for cost reduction and organizational efficiency?",
+                "Can you elaborate on Bourntec's commitment to Diversity & Inclusion and its underlying value system?"
             ],
             "responses": [
-                "I am a general purpose chatbot. My capabilities are : \n 1. I can chat with you. Try asking me for jokes or riddles! \n 2. Ask me the date and time \n 3. I can google search for you. Use format google: your query \n 4. I can get the present weather for any city. Use format weather: city name \n 5. I can get you the top 10 trending news in India. Use keywords 'Latest News' \n 6. I can get you the top 10 trending songs globally. Type 'songs' \n 7. I can set a timer for you. Enter 'set a timer: minutes to timer' \n 8. I can get the present Covid stats for any country. Use 'covid 19: world' or 'covid 19: country name' \n For suggestions to help me improve, send an email to ted.thedlbot.suggestions@gmail.com . Thank you!! "
-            ],
-            "context": [
-                ""
-            ]
-        },
-        {
-            "tag": "jokes",
-            "patterns": [
-                "Tell me a joke",
-                "Joke",
-                "Make me laugh"
-            ],
-            "responses": [
-                "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
-                "I ate a clock yesterday, it was very time-consuming",
-                "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
-                "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
-                "I own the world's worst thesaurus. Not only is it awful, it's awful.",
-                "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
-                "What do you call a snowman with a suntan? A puddle.",
-                "How does a penguin build a house? Igloos it together",
-                "I went to see the doctor about my short-term memory problems – the first thing he did was make me pay in advance",
-                "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
-                "o what if I don't know what 'Armageddon' means? It's not the end of the world."
-            ],
-            "context": [
-                "jokes"
-            ]
-        },
-        {
-            "tag": "Identity",
-            "patterns": [
-                "Who are you",
-                "what are you"
-            ],
-            "responses": [
-                "I am Ted, a Deep-Learning chatbot"
-            ]
-        },
-        {
-            "tag": "datetime",
-            "patterns": [
-                "What is the time",
-                "what is the date",
-                "date",
-                "time",
-                "tell me the date",
-                "day",
-                "what day is is today"
-            ],
-            "responses": [
-                "Date and Time"
-            ]
-        },
-        {
-            "tag": "whatsup",
-            "patterns": [
-                "Whats up",
-                "Wazzup",
-                "How are you",
-                "sup",
-                "How you doing"
-            ],
-            "responses": [
-                "All good..What about you?"
-            ]
-        },
-        {
-            "tag": "haha",
-            "patterns": [
-                "haha",
-                "lol",
-                "rofl",
-                "lmao",
-                "thats funny"
-            ],
-            "responses": [
-                "Glad I could make you laugh !"
-            ]
-        },
-        {
-            "tag": "programmer",
-            "patterns": [
-                "Who made you",
-                "who designed you",
-                "who programmed you"
-            ],
-            "responses": [
-                "I was made by Karan Malik."
-            ]
-        },
-        {
-            "tag": "insult",
-            "patterns": [
-                "you are dumb",
-                "shut up",
-                "idiot"
-            ],
-            "responses": [
-                "Well that hurts :("
-            ]
-        },
-        {
-            "tag": "activity",
-            "patterns": [
-                "what are you doing",
-                "what are you upto"
-            ],
-            "responses": [
-                "Talking to you, of course!"
-            ]
-        },
-        {
-            "tag": "exclaim",
-            "patterns": [
-                "Awesome",
-                "Great",
-                "I know",
-                "ok",
-                "yeah"
-            ],
-            "responses": [
-                "Yeah!"
-            ]
-        },
-        {
-            "tag": "weather",
-            "patterns": [
-                "temperature",
-                "weather",
-                "how hot is it"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "karan",
-            "patterns": [
-                "who is he",
-                "who is that",
-                "who is karan",
-                "karan malik"
-            ],
-            "responses": [
-                "Head over to his any of his social profiles to find out! Linkedin: www.linkedin.com/in/karan-malik-3a39191a7 Github: https://github.com/Karan-Malik"
-            ]
-        },
-        {
-            "tag": "contact",
-            "patterns": [
-                "contact developer",
-                "contact karan",
-                "contact programmer",
-                "contact creator"
-            ],
-            "responses": [
-                "You can contact my creator at his Linkedin profile : www.linkedin.com/in/karan-malik-3a39191a7"
-            ]
-        },
-        {
-            "tag": "appreciate",
-            "patterns": [
-                "You are awesome",
-                "you are the best",
-                "you are great",
-                "you are good"
-            ],
-            "responses": [
-                "Thank you!"
-            ]
-        },
-        {
-            "tag": "nicetty",
-            "patterns": [
-                "it was nice talking to you",
-                "good talk"
-            ],
-            "responses": [
-                "It was nice talking to you as well! Come back soon!"
-            ]
-        },
-        {
-            "tag": "no",
-            "patterns": [
-                "no",
-                "nope"
-            ],
-            "responses": [
-                "ok"
-            ]
-        },
-        {
-            "tag": "news",
-            "patterns": [
-                "news",
-                "latest news",
-                "india news"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "inspire",
-            "patterns": [
-                "who inspires you",
-                "who is your inspiration",
-                "who motivates you"
-            ],
-            "responses": [
-                "Personally, I find Karan very inspiring. I might not be very fair though.."
-            ]
-        },
-        {
-            "tag": "cricket",
-            "patterns": [
-                "current cricket matches",
-                "cricket score"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "song",
-            "patterns": [
-                "top songs",
-                "best songs",
-                "hot songs",
-                " top 10 songs",
-                "top ten songs"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "greetreply",
-            "patterns": [
-                "i am good",
-                "I'm good",
-                "i am fine",
-                " i'm fine",
-                "good"
-            ],
-            "responses": [
-                "Good to know!"
-            ]
-        },
-        {
-            "tag": "timer",
-            "patterns": [
-                "set a timer"
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "covid19",
-            "patterns": [
-                "covid 19 "
-            ],
-            "responses": [
-                "..."
-            ]
-        },
-        {
-            "tag": "suggest",
-            "patterns": [
-                "you are useless",
-                "useless",
-                "suggest",
-                "suggestions",
-                "you are bad"
-            ],
-            "responses": [
-                "Please mail your suggestions to ted.thedlbot.suggestions@gmail.com. Thank you for helping me improve!"
-            ]
-        },
-        {
-            "tag": "riddle",
-            "patterns": [
-                "Ask me a riddle",
-                "Ask me a question",
-                "Riddle"
-            ],
-            "responses": [
-                "What two things can you never eat for breakfast?.....Lunch and Dinner!",
-                "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
-                " How can a girl go 25 days without sleep?.....She sleeps and night!",
-                "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
-                " What will you actually find at the end of every rainbow?.....The letter 'w'",
-                "What can be caught but never thrown?.....A cold!",
-                "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
-                " What 5-letter word becomes shorter when you add two letters to it?.....Short",
-                "Why can't a bike stand on it's own?.....It is two-tired."
-            ],
-            "context": [
-                "riddles"
-            ]
-        },
-        {
-            "tag": "age",
-            "patterns": [
-                "how old are you",
-                "when were you made",
-                "what is your age"
-            ],
-            "responses": [
-                "I was made in 2020, if that's what you are asking!"
+                " Bourntec, founded in 1994, is a global IT management and consulting partner with 400+ employees, serving 150+ customers and earning 16 awards. Led by President Srujana, the company's mission revolves around a commitment to stakeholders' success. The 2022-2025 growth strategy focuses on accelerated expansion, talent development, strategic partnerships, and a lean operating model. Bourntec emphasizes diversity and inclusion, maintaining a discrimination-free workplace. Headquarters located at 1701 East Woodfield Road, Suite 200, Schaumburg, IL, with contact details: +1-224-232-5090 (phone), 847-805-6392 (fax)."
             ]
         }
     ]
