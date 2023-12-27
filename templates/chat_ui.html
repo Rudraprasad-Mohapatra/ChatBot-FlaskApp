@@ -1,370 +1,458 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot UI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            /* background-image: url('https://source.unsplash.com/random'); */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: Arial, sans-serif;
-            color: #fff;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        /* background-image: url('https://source.unsplash.com/random'); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: Arial, sans-serif;
+        color: #fff;
+      }
 
-        #chat-container {
-            width: 400px;
-            margin: auto;
-            padding: 30px;
-            border: 1px solid #ccc;
-            border-radius: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background-color: rgb(30, 41, 121);
-        }
+      #chat-container {
+        width: 400px;
+        margin: auto;
+        padding: 30px;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: rgb(30, 41, 121);
+      }
 
-        .input-container {
-            display: flex;
-        }
+      .input-container {
+        display: flex;
+      }
 
-        #chat-messages {
-            border: 3px solid #483da3;
-            background-color: rgb(37, 37, 137);
-            overflow-y: auto;
-            max-height: 450px;
-            margin-bottom: 10px;
-            border-bottom: 1px solid #eee;
-            border-radius: 10px;
-            padding: 5px;
-        }
+      #chat-messages {
+        border: 3px solid #483da3;
+        background-color: rgb(37, 37, 137);
+        overflow-y: auto;
+        max-height: 450px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #eee;
+        border-radius: 10px;
+        padding: 5px;
+      }
 
-        #user-input {
-            width: 100%;
-            padding: 10px;
-            box-sizing: border-box;
-            border-radius: 10px;
-            border: none;
-        }
+      #user-input {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: none;
+      }
 
-        button {
-            width: 50px;
-            height: 40px;
-            border-radius: 30%;
-            margin-left: 10px;
-            border: none;
-            color: rgb(116, 10, 214)
-        }
+      button {
+        width: 50px;
+        height: 40px;
+        border-radius: 30%;
+        margin-left: 10px;
+        border: none;
+        color: rgb(116, 10, 214);
+      }
 
-        /* Apply styles to anchor tags in the chat */
-        .chat a {
-            color: #3498db;
-            /* Use a color that fits your design */
-            text-decoration: none;
-            /* Remove default underline */
-            transition: color 0.3s ease;
-            /* Smooth color transition on hover */
-        }
+      /* Apply styles to anchor tags in the chat */
+      .chat a {
+        color: #3498db;
+        /* Use a color that fits your design */
+        text-decoration: none;
+        /* Remove default underline */
+        transition: color 0.3s ease;
+        /* Smooth color transition on hover */
+      }
 
-        .chat a:hover {
-            color: #c8e3f5;
-            /* Change color on hover */
-            text-decoration: underline;
-            /* Add underline on hover */
-        }
+      .chat a:hover {
+        color: #c8e3f5;
+        /* Change color on hover */
+        text-decoration: underline;
+        /* Add underline on hover */
+      }
 
-        /* Optional: Add padding and margin for better spacing */
-        .chat a {
-            padding: 2px 4px;
-            margin-right: 5px;
-            display: inline-block;
-        }
+      /* Optional: Add padding and margin for better spacing */
+      .chat a {
+        padding: 2px 4px;
+        margin-right: 5px;
+        display: inline-block;
+      }
 
-        .date-separator {
-            text-align: center;
-            margin: 10px 0;
-            color: #777;
-        }
+      .date-separator {
+        text-align: center;
+        margin: 10px 0;
+        color: #777;
+      }
 
-        /* Define the scrollbar styles */
-        #chat-messages::-webkit-scrollbar {
-            width: 12px;
-            /* width of the scrollbar */
-        }
+      /* Define the scrollbar styles */
+      #chat-messages::-webkit-scrollbar {
+        width: 12px;
+        /* width of the scrollbar */
+      }
 
-        #chat-messages::-webkit-scrollbar-thumb {
-            background-color: #483da3;
-            /* color of the thumb */
-            border-radius: 6px;
-            /* roundness of the thumb */
-        }
+      #chat-messages::-webkit-scrollbar-thumb {
+        background-color: #483da3;
+        /* color of the thumb */
+        border-radius: 6px;
+        /* roundness of the thumb */
+      }
 
-        #chat-messages::-webkit-scrollbar-track {
-            background-color: rgb(255, 255, 255);
-            /* color of the track */
-            border-radius: 6px;
-            /* roundness of the track */
-        }
+      #chat-messages::-webkit-scrollbar-track {
+        background-color: rgb(255, 255, 255);
+        /* color of the track */
+        border-radius: 6px;
+        /* roundness of the track */
+      }
     </style>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div id="chat-container">
-        <div class="giphy" style="display: flex; align-items: center; justify-content: center; margin-bottom: 15px;">
-            <img src="../static/GIF/giphy.gif" alt="ChatBot Giphy" style="height: 50px;
+      <div
+        class="giphy"
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 15px;
+        "
+      >
+        <img
+          src="../static/GIF/giphy.gif"
+          alt="ChatBot Giphy"
+          style="
+            height: 50px;
             width: 50px;
             border: 2px solid blueviolet;
-            border-radius: 50%;">
-            &nbsp;
-            <p>Hii there👋 ! kass 24x7 here! </p>
-        </div>
-        <div id="chat-messages"></div>
-        <div class="input-container">
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <button id="submitButton" onclick="sendMessage()"><i class="fa fa-paper-plane"
-                    aria-hidden="true"></i></button>
-        </div>
+            border-radius: 50%;
+          "
+        />
+        &nbsp;
+        <p>Hii there👋 ! kass 24x7 here!</p>
+      </div>
+      <div id="chat-messages"></div>
+      <div class="input-container">
+        <input type="text" id="user-input" placeholder="Type your message..." />
+        <button id="submitButton" onclick="sendMessage()">
+          <i class="fa fa-paper-plane" aria-hidden="true"></i>
+        </button>
+      </div>
     </div>
 
     <script src="../static/JS-Library/axios.min.js"></script>
 
     <script>
+      const chatMessagesContainer = document.getElementById("chat-messages");
+      const userInput = document.getElementById("user-input");
 
-        const chatMessagesContainer = document.getElementById('chat-messages');
-        const userInput = document.getElementById('user-input');
+      // Changing the message box color according to the user
 
-        // Changing the message box color according to the user
+      let colval = true;
 
-        let colval = true;
+      // Message container's CSS added dynamically
 
-        // Message container's CSS added dynamically
+      function displayMessage(sender, message, date) {
+        // Manipulating the message sent by the bot(only) so that the links coming in response can be clickable
 
-        function displayMessage(sender, message, date) {
+        function replaceLinks(message) {
+          let urlRegex = /(https?:\/\/[^\s]+)/g;
+          let replaceString = message.replace(urlRegex, function (url) {
+            return '<a href="' + url + '" target="_blank">' + url + "</a>";
+          });
+          return replaceString;
+        }
+
+        if (sender === "Kass" || sender === "Chatbot") {
+          let resultString = replaceLinks(message);
+          message = resultString;
+        }
+
+        const messageDiv = document.createElement("div");
+        messageDiv.classList.add("chat");
+        messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
+
+        Object.assign(messageDiv.style, {
+          display: "inline-block",
+          borderRadius: "10px",
+          padding: "5px",
+          margin: "10px 10px",
+          minWidth: "165px",
+          maxWidth: "280px",
+          wordBreak: "break-word",
+        });
+
+        if (sender === "You") {
+          messageDiv.style.float = "right";
+        }
+
+        if (colval) {
+          messageDiv.style.backgroundColor = "blueviolet";
+          colval = !colval;
+        } else {
+          messageDiv.style.backgroundColor = "darkorchid";
+          colval = !colval;
+        }
+
+        chatMessagesContainer.appendChild(messageDiv);
+        chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
+      }
+
+      // Rendering the two message at the start of the chat
+
+      setTimeout(() => {
+        displayMessage("Kass", "Hii there👋 ! I am kass");
+        displayMessage("Kass", "How can I assist you today!");
+
+        let lineBreak = document.createElement("br");
+
+        chatMessagesContainer.appendChild(lineBreak);
+      }, 1000);
+
+      // Storing chats in local storage of browser
+      function saveChatToLocalStorage(sender, message, date) {
+        // Retrieve existing chat history from localStorage
+        const existingChatHistory =
+          JSON.parse(localStorage.getItem("chatHistory")) || [];
+
+        // Add the new message to the chat history with timestamp
+        existingChatHistory.push({ sender, message, date });
+
+        // save the updated chat history with timestamp
+        localStorage.setItem(
+          "chatHistory",
+          JSON.stringify(existingChatHistory)
+        );
+      }
+
+      // function called by the send button
+      function sendMessage() {
+        const userMessage = userInput.value.trim();
+        if (userMessage === "" || /^\s+$/.test(userInput.value)) {
+          userInput.value = "";
+          return;
+        }
+
+        // Get the current date in the format YYYY-MM-DD
+        const currentDate = new Date().toISOString().split("T")[0];
+
+        // Display user message in the chat UI
+        displayMessage("You", userMessage, currentDate);
+
+        // Save the chat history to localStorage
+        saveChatToLocalStorage("You", userMessage, currentDate);
+
+        // Making the submit button disabled clicking enter
+        document.getElementById("submitButton").disabled = true;
+
+        // Send user message to the server using Axios
+        let boolTest = false;
+        axios
+          .post("/chat", { query: userMessage })
+          .then((response) => {
+            const chatbotResponse = response.data.response;
+
+            // Display chatbot's response in the chat UI
+
+            // displayMessage('Kass', chatbotResponse);
+
+            // function displayMessage(sender, message, date) {
+            const sender = "Kass";
+            let message = chatbotResponse;
+            let date = new Date().toISOString().split("T")[0];
 
             // Manipulating the message sent by the bot(only) so that the links coming in response can be clickable
 
             function replaceLinks(message) {
-                let urlRegex = /(https?:\/\/[^\s]+)/g;
-                let replaceString = message.replace(urlRegex, function (url) {
-                    return '<a href="' + url + '" target="_blank">' + url + '</a>'
-                });
-                return replaceString;
+              let urlRegex = /(https?:\/\/[^\s]+)/g;
+              let replaceString = message.replace(urlRegex, function (url) {
+                return '<a href="' + url + '" target="_blank">' + url + "</a>";
+              });
+              return replaceString;
             }
 
             if (sender === "Kass" || sender === "Chatbot") {
-                let resultString = replaceLinks(message);
-                message = resultString;
+              let resultString = replaceLinks(message);
+              message = resultString;
             }
 
-            const messageDiv = document.createElement('div');
+            const messageDiv = document.createElement("div");
             messageDiv.classList.add("chat");
-            messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
 
             Object.assign(messageDiv.style, {
-                display: "inline-block",
-                borderRadius: "10px",
-                padding: '5px',
-                margin: "10px 10px",
-                minWidth: "165px",
-                maxWidth: "280px",
-                wordBreak: "break-word"
-            })
+              display: "inline-block",
+              borderRadius: "10px",
+              padding: "5px",
+              margin: "10px 10px",
+              minWidth: "165px",
+              maxWidth: "280px",
+              wordBreak: "break-word",
+            });
+
+            function scrollToBottom() {
+              chatMessagesContainer.scrollTop =
+                chatMessagesContainer.scrollHeight;
+            }
+
+            // typeWriterEffect
+
+            const delay = 50; // milliseconds
+            let i = 0;
+            messageDiv.innerHTML += `<strong>${sender}:</strong> `;
+            function type() {
+              if (i < message.length) {
+                messageDiv.innerHTML += message.charAt(i);
+                i++;
+                scrollToBottom();
+                setTimeout(type, delay);
+              }
+            }
+
+            type();
+            scrollToBottom();
+            //   messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
 
             if (sender === "You") {
-                messageDiv.style.float = "right";
+              messageDiv.style.float = "right";
             }
 
             if (colval) {
-                messageDiv.style.backgroundColor = "blueviolet";
-                colval = !colval;
+              messageDiv.style.backgroundColor = "blueviolet";
+              colval = !colval;
             } else {
-                messageDiv.style.backgroundColor = "darkorchid";
-                colval = !colval;
+              messageDiv.style.backgroundColor = "darkorchid";
+              colval = !colval;
             }
 
             chatMessagesContainer.appendChild(messageDiv);
-            chatMessagesContainer.scrollTop = chatMessagesContainer.scrollHeight;
-        }
-
-
-        // Rendering the two message at the start of the chat
-
-        setTimeout(() => {
-            displayMessage("Kass", "Hii there👋 ! I am kass");
-            displayMessage("Kass", "How can I assist you today!");
-
-            let lineBreak = document.createElement('br');
-
-            chatMessagesContainer.appendChild(lineBreak);
-        }, 1000);
-
-
-        // Storing chats in local storage of browser
-        function saveChatToLocalStorage(sender, message, date) {
-            // Retrieve existing chat history from localStorage
-            const existingChatHistory = JSON.parse(localStorage.getItem("chatHistory")) || [];
-
-            // Add the new message to the chat history with timestamp
-            existingChatHistory.push({ sender, message, date });
-
-            // save the updated chat history with timestamp
-            localStorage.setItem('chatHistory', JSON.stringify(existingChatHistory));
-        }
-
-        // function called by the send button
-        function sendMessage() {
-
-            const userMessage = userInput.value.trim();
-            if (userMessage === '' || /^\s+$/.test(userInput.value)) {
-                userInput.value = "";
-                return;
-            }
-
-            // Get the current date in the format YYYY-MM-DD
-            const currentDate = new Date().toISOString().split('T')[0];
-
-            // Display user message in the chat UI
-            displayMessage('You', userMessage, currentDate);
+            chatMessagesContainer.scrollTop =
+              chatMessagesContainer.scrollHeight;
+            // }
 
             // Save the chat history to localStorage
-            saveChatToLocalStorage('You', userMessage, currentDate);
+            saveChatToLocalStorage("Chatbot", chatbotResponse, currentDate);
 
-            // Making the submit button disabled clicking enter
-            document.getElementById('submitButton').disabled = true;
+            // Making the submit button enabled after getting the response
 
-            // Send user message to the server using Axios
+            document.getElementById("submitButton").disabled = false;
+          })
+          .catch((error) => {
+            console.error("Error sending message:", error.message);
 
-            axios.post('/chat', { query: userMessage })
-                .then(response => {
-                    const chatbotResponse = response.data.response;
+            displayMessage(
+              "Kass",
+              "I have faced some error in sending your message! try again later, Thank you."
+            );
 
-                    // Display chatbot's response in the chat UI
-                    displayMessage('Kass', chatbotResponse);
+            // Making the submit button enabled after getting the response
 
-                    // Save the chat history to localStorage
-                    saveChatToLocalStorage('Chatbot', chatbotResponse, currentDate);
+            document.getElementById("submitButton").disabled = false;
+          });
 
-                    // Making the submit button enabled after getting the response
+        // Clear the user input field
+        userInput.value = "";
+      }
 
-                    document.getElementById('submitButton').disabled = false;
-                })
-                .catch(error => {
-                    console.error('Error sending message:', error);
+      // Added Enter button functionality
 
-                    displayMessage('Kass', "I have faced some error in sending your message! try again later, Thank you.");
-
-                    // Making the submit button enabled after getting the response
-
-                    document.getElementById('submitButton').disabled = false;
-                });
-
-            // Clear the user input field
-            userInput.value = '';
+      document.getElementById("user-input").addEventListener("keyup", (e) => {
+        if (e.key == "Enter") {
+          document.getElementById("submitButton").click();
         }
-
-        // Added Enter button functionality
-
-        document.getElementById("user-input").addEventListener("keyup", (e) => {
-            if (e.key == "Enter") {
-                document.getElementById("submitButton").click();
-            }
-        })
-
-
-
+      });
     </script>
 
     <script>
-        window.addEventListener("load", function () {
-            // Retrieve chat history from localStorage
-            const chatHistory = JSON.parse(localStorage.getItem('chatHistory')) || [];
+      window.addEventListener("load", function () {
+        // Retrieve chat history from localStorage
+        const chatHistory =
+          JSON.parse(localStorage.getItem("chatHistory")) || [];
 
-            // Group messages by date
-            const groupedChatHistory = groupMessagesByDate(chatHistory);
+        // Group messages by date
+        const groupedChatHistory = groupMessagesByDate(chatHistory);
 
-            const currentDate = new Date().toISOString().split('T')[0];
+        const currentDate = new Date().toISOString().split("T")[0];
 
-            // Display grouped chat history in the chat UI
-            groupedChatHistory.forEach(group => {
-                group.messages.forEach(({ sender, message }, ind) => {
-                    console.log(sender);
-                    
-                    //Logic for displaying Date and today 
-                    if (ind == 0) {
-                        displayDateSeparator(group.date);
-                        if (group.date === currentDate) {
-                            const todayDiv = document.createElement('div');
-                            todayDiv.classList.add('date-separator');
-                            todayDiv.textContent = "today";
-                            chatMessagesContainer.appendChild(todayDiv);
-                        }
-                    }
-                    if(ind == groupedChatHistory.length-1){
-                        if (group.date+1 === currentDate) {
-                            const todayDiv = document.createElement('div');
-                            todayDiv.classList.add('date-separator');
-                            todayDiv.textContent = "today";
-                            chatMessagesContainer.appendChild(todayDiv);
-                        }
-                    }
-                    // 
-                    displayMessage(sender, message, group.date);
-                });
-            })
+        // Display grouped chat history in the chat UI
+        groupedChatHistory.forEach((group) => {
+          group.messages.forEach(({ sender, message }, ind) => {
+            console.log(sender);
+
+            //Logic for displaying Date and today
+            if (ind == 0) {
+              displayDateSeparator(group.date);
+              if (group.date === currentDate) {
+                const todayDiv = document.createElement("div");
+                todayDiv.classList.add("date-separator");
+                todayDiv.textContent = "today";
+                chatMessagesContainer.appendChild(todayDiv);
+              }
+            }
+            if (ind == groupedChatHistory.length - 1) {
+              if (group.date + 1 === currentDate) {
+                const todayDiv = document.createElement("div");
+                todayDiv.classList.add("date-separator");
+                todayDiv.textContent = "today";
+                chatMessagesContainer.appendChild(todayDiv);
+              }
+            }
+            //
+            displayMessage(sender, message, group.date);
+          });
+        });
+      });
+
+      function groupMessagesByDate(chatHistory) {
+        // Group messages by date using a Map
+        const groupedMessages = new Map();
+        chatHistory.forEach(({ sender, message, date }) => {
+          const group = groupedMessages.get(date) || { date, messages: [] };
+          group.messages.push({ sender, message });
+          groupedMessages.set(date, group);
         });
 
+        // Convert the Map to an array of groups
+        return Array.from(groupedMessages.values());
+      }
 
-        function groupMessagesByDate(chatHistory) {
-            // Group messages by date using a Map
-            const groupedMessages = new Map();
-            chatHistory.forEach(({ sender, message, date }) => {
-                const group = groupedMessages.get(date) || { date, messages: [] };
-                group.messages.push({ sender, message });
-                groupedMessages.set(date, group);
-            });
+      function displayDateSeparator(date) {
+        // Display the date separator in the chat UI
+        const separatorDiv = document.createElement("div");
+        separatorDiv.classList.add("date-separator");
+        separatorDiv.textContent = formatDate(date);
+        chatMessagesContainer.appendChild(separatorDiv);
+      }
 
-            // Convert the Map to an array of groups
-            return Array.from(groupedMessages.values());
-        }
+      function formatDate(dateString) {
+        // Format the date string (e.g., "2023-11-17") to a readable format
+        const options = { year: "numeric", month: "long", day: "numeric" };
+        const date = new Date(dateString);
+        return date.toLocaleDateString("en-IN", options);
+      }
 
-        function displayDateSeparator(date) {
-            // Display the date separator in the chat UI
-            const separatorDiv = document.createElement('div');
-            separatorDiv.classList.add('date-separator');
-            separatorDiv.textContent = formatDate(date);
-            chatMessagesContainer.appendChild(separatorDiv);
-        }
+      function getNextDay(currentDate) {
+        // Parse the current date string to a Date object
+        const dateObject = new Date(currentDate);
 
-        function formatDate(dateString) {
-            // Format the date string (e.g., "2023-11-17") to a readable format
-            const options = { year: 'numeric', month: 'long', day: 'numeric' };
-            const date = new Date(dateString);
-            return date.toLocaleDateString('en-IN', options);
-        }
+        // Add 1 to the current day
+        dateObject.setDate(dateObject.getDate() + 1);
 
-        function getNextDay(currentDate) {
-            // Parse the current date string to a Date object
-            const dateObject = new Date(currentDate);
+        // Format the result as a string in the format 'YYYY-MM-DD'
+        const nextDay = dateObject.toISOString().split("T")[0];
 
-            // Add 1 to the current day
-            dateObject.setDate(dateObject.getDate() + 1);
-
-            // Format the result as a string in the format 'YYYY-MM-DD'
-            const nextDay = dateObject.toISOString().split('T')[0];
-
-            return nextDay;
-        }   
+        return nextDay;
+      }
     </script>
-
-</body>
-
+  </body>
 </html>
