@@ -1099,6 +1099,9 @@
         {
             "tag": "Contact_us",
             "patterns": [
+                "CEO",
+                "Who is the CEO",
+                "Why is the CEO",
                 "What is the address of Bourntec's North America office in Schaumburg, IL, USA?",
                 "Where is Bourntec's office located in the Middle East, specifically in Dubai, UAE?",
                 "In which area and city is Bourntec's office situated in Hyderabad, Telangana, India?",
