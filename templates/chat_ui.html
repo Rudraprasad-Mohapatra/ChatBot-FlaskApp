@@ -305,23 +305,7 @@
                 chatMessagesContainer.scrollHeight;
             }
 
-            // typeWriterEffect
-
-            const delay = 50; // milliseconds
-            let i = 0;
-            messageDiv.innerHTML += `<strong>${sender}:</strong> `;
-            function type() {
-              if (i < message.length) {
-                messageDiv.innerHTML += message.charAt(i);
-                i++;
-                scrollToBottom();
-                setTimeout(type, delay);
-              }
-            }
-
-            type();
-            scrollToBottom();
-            //   messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
+            messageDiv.innerHTML = `<strong>${sender}:</strong> ${message}`;
 
             if (sender === "You") {
               messageDiv.style.float = "right";

@@ -860,8 +860,8 @@
                 "is Bourntec hiring",
                 "technologies Bourntec provide",
                 "internships at Bourntec",
-                "referal in Bourntec",
-                ""
+                "referal in Bourntec"
+                
             ],
             "responses": [
                 "For further more queries visit this https://bourntec.com"
@@ -1027,26 +1027,26 @@
                 "What is the contact email address provided for inquiries related to personal data processing at Bourntec?"
             ],
             "responses": [
-                    "Bourntec's Cookie Policy primarily addresses the use, types, categorization, and user controls related to cookies on its website.",
-                    "In the context of Bourntec's website, a cookie is defined as a piece of information sent to a user's computer during site access, containing details about the visit and volunteered information.",
-                    "Cookies contain information about a user's visit, including actions on the website and any volunteered information.",
-                    "The three main types of cookies mentioned are session cookies, persistent cookies, and third-party cookies.",
-                    "Session cookies link user actions during a browsing session, expiring at the end of the session, avoiding user inconvenience and aiding navigation.",
-                    "Persistent cookies store user preferences beyond a session, contributing to an enhanced user experience by recalling preferences and actions.",
-                    "Third-party cookies are generated when the website includes content from external sites or when a user clicks on third-party links provided by the active site.",
-                    "Cookies are classified into Strictly Necessary Cookies, Targeting Cookies, and Performance Cookies based on their purpose.",
-                    "Strictly Necessary Cookies are crucial for website functionality as they are necessary for services like privacy preferences, logging in, and form submissions.",
-                    "Targeting Cookies are set by advertising partners, building user profiles for targeted ads without directly storing personal information.",
-                    "Performance Cookies count visits, analyze traffic sources, and provide aggregated data to measure and enhance the site's performance.",
-                    "Users can control cookies through browser settings, including viewing, deleting, or blocking them individually, or deleting all when closing the browser.",
-                    "Users can opt-in or opt-out of specific cookie categories through the Cookie Settings on the website.",
-                    "Blocking all cookies may impact certain parts of the site because some cookies are essential for website functionality.",
-                    "Users can block third-party cookies or cookies from a specific site through browser settings.",
-                    "If a user wants to delete all cookies when closing the browser, they can configure their browser settings accordingly.",
-                    "Targeting Cookies typically collect non-personal information to build user profiles for displaying relevant advertisements.",
-                    "Users are encouraged to periodically check for updates to Bourntec's Cookie Policy. Specific advisories may be provided for significant changes.",
-                    "Periodic checking of the Cookie Policy is recommended for users to stay informed about any changes or updates to the policy.",
-                    "For inquiries related to personal data processing, users can contact Bourntec at legal@bourntec.com."
+                "Bourntec's Cookie Policy primarily addresses the use, types, categorization, and user controls related to cookies on its website.",
+                "In the context of Bourntec's website, a cookie is defined as a piece of information sent to a user's computer during site access, containing details about the visit and volunteered information.",
+                "Cookies contain information about a user's visit, including actions on the website and any volunteered information.",
+                "The three main types of cookies mentioned are session cookies, persistent cookies, and third-party cookies.",
+                "Session cookies link user actions during a browsing session, expiring at the end of the session, avoiding user inconvenience and aiding navigation.",
+                "Persistent cookies store user preferences beyond a session, contributing to an enhanced user experience by recalling preferences and actions.",
+                "Third-party cookies are generated when the website includes content from external sites or when a user clicks on third-party links provided by the active site.",
+                "Cookies are classified into Strictly Necessary Cookies, Targeting Cookies, and Performance Cookies based on their purpose.",
+                "Strictly Necessary Cookies are crucial for website functionality as they are necessary for services like privacy preferences, logging in, and form submissions.",
+                "Targeting Cookies are set by advertising partners, building user profiles for targeted ads without directly storing personal information.",
+                "Performance Cookies count visits, analyze traffic sources, and provide aggregated data to measure and enhance the site's performance.",
+                "Users can control cookies through browser settings, including viewing, deleting, or blocking them individually, or deleting all when closing the browser.",
+                "Users can opt-in or opt-out of specific cookie categories through the Cookie Settings on the website.",
+                "Blocking all cookies may impact certain parts of the site because some cookies are essential for website functionality.",
+                "Users can block third-party cookies or cookies from a specific site through browser settings.",
+                "If a user wants to delete all cookies when closing the browser, they can configure their browser settings accordingly.",
+                "Targeting Cookies typically collect non-personal information to build user profiles for displaying relevant advertisements.",
+                "Users are encouraged to periodically check for updates to Bourntec's Cookie Policy. Specific advisories may be provided for significant changes.",
+                "Periodic checking of the Cookie Policy is recommended for users to stay informed about any changes or updates to the policy.",
+                "For inquiries related to personal data processing, users can contact Bourntec at legal@bourntec.com."
             ]
         },
         {
@@ -1099,9 +1099,6 @@
         {
             "tag": "Contact_us",
             "patterns": [
-                "CEO",
-                "Who is the CEO",
-                "Why is the CEO",
                 "What is the address of Bourntec's North America office in Schaumburg, IL, USA?",
                 "Where is Bourntec's office located in the Middle East, specifically in Dubai, UAE?",
                 "In which area and city is Bourntec's office situated in Hyderabad, Telangana, India?",
@@ -1116,7 +1113,6 @@
                 "How many employees does Bourntec currently have, and how many customers does it serve?",
                 "What is the significance of the company name Bourntec and how does it reflect the company's commitment?",
                 "Can you provide details about Bourntec's leadership, specifically the President, Srujana?",
-                "Who is the CEO of the company?",
                 "What is Bourntec's mission, and how does it align with its growth strategy for 2022-2025?",
                 "How does Bourntec plan to achieve accelerated growth, and what are the key components of its growth strategy?",
                 "In terms of talent, what is Bourntec's approach to rapid growth in core competencies and hiring in operating geographies?",
@@ -1126,6 +1122,142 @@
             ],
             "responses": [
                 " Bourntec, founded in 1994, is a global IT management and consulting partner with 400+ employees, serving 150+ customers and earning 16 awards. Led by President Srujana, the company's mission revolves around a commitment to stakeholders' success. The 2022-2025 growth strategy focuses on accelerated expansion, talent development, strategic partnerships, and a lean operating model. Bourntec emphasizes diversity and inclusion, maintaining a discrimination-free workplace. Headquarters located at 1701 East Woodfield Road, Suite 200, Schaumburg, IL, with contact details: +1-224-232-5090 (phone), 847-805-6392 (fax)."
+            ]
+        },
+        {
+            "tag": "CEO",
+            "patterns": [
+                "Who is the CEO of the company?",
+                "CEO",
+                "CEO of Bournte",
+                "Who currently holds the position of CEO at Bourntec?",
+                "Can you tell me the name of the Chief Executive Officer at Bourntec?",
+                "Who is leading Bourntec as its CEO?",
+                "Do you know who is in charge as the CEO of Bourntec?",
+                "Could you provide information about the current CEO of Bourntec?",
+                "What is the name of the person serving as the CEO of Bourntec?",
+                "Who is at the helm of Bourntec in the role of CEO?",
+                "Can you identify the individual currently acting as the CEO of Bourntec?",
+                "Could you tell me who is responsible for the CEO role at Bourntec?",
+                "Who has the role of Chief Executive Officer at Bourntec?"
+            ],
+            "responses": [
+                "Srujana is the CEO of Bourntec.",
+                "The current Chief Executive Officer of Bourntec is Srujana.",
+                "At the helm of Bourntec is Srujana, serving as the CEO.",
+                "Srujana holds the position of CEO at Bourntec.",
+                "Bourntec is led by Srujana in the capacity of CEO."
+            ]
+        },
+        {
+            "tag": "analytics&Ai",
+            "patterns": [
+                "What is Bourntec's focus in Data, Analytics & AI collaboration with organizations?",
+                "How does Bourntec contribute to companies' revenue evolution amid disruptions?",
+                "What key areas does Bourntec cover in its Data & Analytics practice?",
+                "How does Bourntec innovate using Partner Platforms for businesses?",
+                "What role does Bourntec play in understanding revenue patterns, drivers, and trends?",
+                "What value does Bourntec offer through strategic partnerships with Data Engineering Platforms?",
+                "How does Bourntec's Data & Analytics practice connect businesses and partners?",
+                "What's the significance of Bourntec's consulting and operational services in Data & Analytics?",
+                "How can companies leverage Bourntec to expedite their data to value cycle?",
+                "In which industries does Bourntec collaborate, as mentioned in the data?",
+                "Can you share examples of Bourntec's work in the Marine Insurance sector?",
+                "What challenges did Bourntec address for a property and casualty underwriting agency in Data Analysis?",
+                "In Utilities, what goals did Bourntec aim to achieve for a global water technology provider?",
+                "How did Bourntec enhance User record sharing for Blockchain Virtual?",
+                "What's the focus of Bourntec's Multi Cloud offering and its relevance to businesses?",
+                "How does Bourntec assist companies in executing cloud migration strategies?",
+                "How does Bourntec help companies derive maximum benefits from their preferred cloud for enterprise applications?",
+                "What's the role of Cloud Operations in expanding companies' cloud strategies?",
+                "How does Bourntec ensure efficient cloud resource management for companies?",
+                "Can you detail the specific areas covered in Bourntec's Platform & Applications services?"
+            ],
+            "responses": [
+                "Bourntec is a data, analytics, and AI company that connects businesses, platforms, customers, employees, and partners through integrated data. They help companies understand revenue patterns, market drivers, application trends, and competing technologies. Their Data & Analytics practice covers Time to Value, Innovation, Analytics for Operational, Descriptive, Prescriptive, and Predictive Insights, and Cost of Ownership. They offer consulting and operational services, including design, build, migrate, and operate across private and public cloud environments for optimal performance, cost savings, and improved business agility."
+            ]
+        },
+        {
+            "tag": "cloud",
+            "patterns": [
+                "What is Bourntec's primary focus in Cloud Strategy & Transformation collaboration with organizations?",
+                "How does Bourntec contribute to organizations evolving to a new business model using the cloud as a digital enterprise?",
+                "What role does Bourntec play in helping large global enterprises go digital through cloud adoption?",
+                "What Cloud Value Assessment services does Bourntec provide?",
+                "How does Bourntec address Total Cost of Ownership (TCO) considerations for cloud solutions?",
+                "What key aspects are covered in Bourntec's Cloud Evaluation services?",
+                "What is the significance of Cloud Security and Governance in Bourntec's cloud offerings?",
+                "How does Bourntec conduct Cloud Adoption Assessments for enterprises?",
+                "What does Bourntec focus on in defining a Cloud Operating Model for its clients?",
+                "How does Bourntec contribute to Cloud Compliance for organizations?",
+                "What services does Bourntec offer for re-engineering processes to facilitate cloud adoption?",
+                "In what ways does Bourntec support Cloud Migration for enterprises?",
+                "What role does Bourntec play in Cloud Solution & Implementation for its clients?",
+                "How does Bourntec assist organizations in Technology Decision-making related to the cloud?",
+                "What is the emphasis on Cloud Architecture & Frameworks in Bourntec's approach?",
+                "How does Bourntec facilitate Cloud Enterprise Integration for its clients?",
+                "What specific areas are covered in the Platform & Applications services provided by Bourntec?",
+                "What is the significance of Strategic Partnerships with Industry-leading Cloud Platforms for Bourntec?",
+                "How does Bourntec leverage DevOps platforms with hybrid cloud in its services?",
+                "What is the focus of Bourntec's Multi-Cloud offering, and how does it cater to the requirements of different business needs?"
+            ],
+            "responses": [
+                "Bourntec is a company that specializes in transforming organizations into digital enterprises through cloud adoption. They offer comprehensive services for design, build, migrate, and operate across private and public cloud environments. Their Cloud Migrate service addresses TCO considerations, while their Cloud Evaluation services cover security, governance, adoption assessment, and strategy. Bourntec's Platform & Applications services cover design, build, migrate, and operate services across private and public cloud environments, leveraging DevOps platforms with hybrid cloud."
+            ]
+        },
+        {
+            "tag": "government",
+            "patterns": [
+                "What are Bourntec's key focuses in government sectors?",
+                "How does Bourntec use its deep domain knowledge in government sectors?",
+                "What transformative trends in government does Bourntec aim to address in 2022-25?",
+                "What are the main services that Bourntec offers to the public sector?",
+                "How does Bourntec collaborate with technology partners to strengthen customer relationships?",
+                "In what ways does Bourntec tailor its offerings to government clients?",
+                "What challenges did governments face in 2020, and how did they respond?",
+                "How did shifts in government operations manifest in 2020?",
+                "What key areas are covered under the democratization of services?",
+                "How does Bourntec contribute to application modernization in the government sector?",
+                "What federally compliant cloud technologies does Bourntec provide?",
+                "What components are included in Bourntec's agile and scalable citizen benefit product development?",
+                "How does Bourntec utilize advanced analytics and AI-based decision-supporting solutions?",
+                "What services does Bourntec offer in business process automation?",
+                "What is the significance of strategy and transformation in Bourntec's services?",
+                "What major areas are covered under data intelligence by Bourntec?",
+                "What certifications does Bourntec hold as a Minority Business Enterprise?",
+                "In which sectors does Bourntec provide information technology services to government clients?",
+                "How does Bourntec address the unique challenges of the government in terms of IT solutions?"
+            ],
+            "responses": [
+                "Bourntec is a government technology company that focuses on automation, managed services, data intelligence, and government services. It aims to strengthen customer relationships and address transformative trends in government from 2022 to 2025. Bourntec offers services like application modernization, federally compliant cloud technologies, agile citizen benefit product development, advanced analytics, AI-based decision-support solutions, business process automation, strategy, and transformation. It collaborates with technology partners to deliver tailored solutions that align with government needs. Bourntec holds certifications as a Minority Business Enterprise and provides information technology services to various sectors."
+            ]
+        },
+        {
+            "tag": "partners_QnA",
+            "patterns": [
+                "What is the significance of strategic partnerships in Bourntec's business strategy?",
+                "How does Bourntec aim to deliver unparalleled value to its clients through strategic partnerships?",
+                "What common values and business objectives do Bourntec and its partners share in their relationships?",
+                "How does Bourntec's Partner Ecosystem contribute to creating unique winning partnerships?",
+                "What growth opportunities does Bourntec seek through its partner relationships?",
+                "Can you provide details about Bourntec's expertise in the Oracle OPN Program?",
+                "What rights does Bourntec have in terms of Oracle Cloud Platform Resell?",
+                "In which areas does Bourntec have partnerships within the Oracle Cloud Sell and Service track?",
+                "What is the significance of CSPE (Cloud Solutions Provider Expertise) for EBS in Bourntec's partnerships?",
+                "What does Oracle IaaS Partner Specialization entail for Bourntec?",
+                "How many qualified CLI ratings has Bourntec managed to obtain from customers?",
+                "How does Bourntec's industry-focused approach differentiate it as a global information technology management partner?",
+                "What areas does Bourntec cover in its advisory and consulting services?",
+                "How does Bourntec leverage its in-depth research, knowledge, and experience to achieve exceptional customer outcomes?",
+                "What role does strategic technology solutions play in Bourntec's service offerings?",
+                "How does Bourntec help clients harness the power of emerging technologies?",
+                "Can you provide an example of a digital transformation project that Bourntec has successfully executed?",
+                "In what ways does Bourntec address the toughest challenges faced by its clients?",
+                "How does Bourntec ensure outstanding business value delivery to its clients?",
+                "What is the primary focus of Bourntec's customer satisfaction strategy?"
+            ],
+            "responses": [
+                "Bourntec's business strategy focuses on strategic partnerships to deliver value to clients. With expertise in Oracle OPN Program, Oracle Cloud Platform Resell rights, and 30 qualified CLI ratings, the company specializes in advisory, consulting, and business process re-engineering services. Bourntec has successfully executed digital transformation projects and ensures outstanding business value delivery through tailored solutions and strategic partnerships."
             ]
         }
     ]
